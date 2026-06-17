@@ -305,7 +305,8 @@ header.app-header .header-actions {
   gap: 8px;
 }
 
-.toc-item a {
+.toc-item a,
+.drawer-toc-item a {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -320,7 +321,8 @@ header.app-header .header-actions {
   overflow: hidden;
 }
 
-.toc-item a::before {
+.toc-item a::before,
+.drawer-toc-item a::before {
   content: '';
   position: absolute;
   left: 0;
@@ -333,18 +335,21 @@ header.app-header .header-actions {
   transition: all 0.25s ease;
 }
 
-.toc-item.active a {
+.toc-item.active a,
+.drawer-toc-item.active a {
   color: var(--text-primary);
   background: rgba(var(--accent-rgb), 0.08);
 }
 
-.toc-item.active a::before {
+.toc-item.active a::before,
+.drawer-toc-item.active a::before {
   opacity: 1;
   height: 60%;
   transform: scaleY(1);
 }
 
-.toc-item a:hover {
+.toc-item a:hover,
+.drawer-toc-item a:hover {
   color: var(--text-primary);
   background: rgba(var(--accent-rgb), 0.05);
   padding-left: 18px;
@@ -378,6 +383,7 @@ header.app-header .header-actions {
   outline: none;
   transition: all 0.3s ease;
   box-shadow: var(--shadow);
+  -webkit-appearance: none;
 }
 
 .search-input:focus {
@@ -388,9 +394,12 @@ header.app-header .header-actions {
 .search-icon {
   position: absolute;
   left: 18px;
+  width: 20px;
+  height: 20px;
   color: var(--text-tertiary);
   pointer-events: none;
   transition: color 0.3s;
+  z-index: 2;
 }
 
 .search-input:focus + .search-icon {
