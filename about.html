@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sajid Khokhar Apps — Privacy Policy & Terms of Use</title>
+  <meta name="description" content="Privacy Policy and Terms of Use for all apps published by Sajid Khokhar on the Apple App Store." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #F5F7FA;
+      --white:     #FFFFFF;
+      --blue:      #4A5FE8;
+      --blue-dark: #3547C8;
+      --blue-soft: #EEF1FD;
+      --text:      #1C1E2E;
+      --body:      #3D4055;
+      --muted:     #7A7E96;
+      --border:    #E2E5F0;
+      --card:      #FFFFFF;
+      --green:     #22C55E;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── HERO ─────────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(145deg, #1C1E2E 0%, #252840 60%, #1a1d35 100%);
+      color: #fff;
+      text-align: center;
+      padding: 72px 24px 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 50% 0%, rgba(74,95,232,0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(74,95,232,0.18);
+      border: 1px solid rgba(74,95,232,0.40);
+      color: #99AAFF;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 22px;
+    }
+    .hero-chip::before { content: "⚖️"; font-size: 12px; }
+    .hero h1 {
+      font-size: clamp(26px, 5vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .hero h1 span {
+      background: linear-gradient(130deg, #7B8FFF, #A78BFA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-sub {
+      color: #9CA3C8;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .hero-date {
+      display: inline-block;
+      margin-top: 14px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #9CA3C8;
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 100px;
+    }
+
+    /* ─── STICKY NAV ────────────────────────────────────────── */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+    }
+    .nav-inner {
+      display: flex;
+      gap: 0;
+      max-width: 720px;
+      width: 100%;
+    }
+    .tab {
+      flex: 1;
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 16px 24px;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+      letter-spacing: 0.2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+    }
+    .tab .icon { font-size: 16px; }
+    .tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+    .tab:hover:not(.active) { color: var(--text); }
+
+    /* ─── PAGE WRAPPER ──────────────────────────────────────── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ─── INTRO CARD ────────────────────────────────────────── */
+    .intro-card {
+      background: var(--blue-soft);
+      border: 1px solid rgba(74,95,232,0.20);
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 40px;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .intro-card .ic-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      line-height: 1;
+      margin-top: 2px;
+    }
+    .intro-card p {
+      font-size: 14px;
+      color: #2D3880;
+      line-height: 1.65;
+      margin: 0;
+    }
+    .intro-card p strong { color: #1A2070; }
+
+    /* ─── SECTION ───────────────────────────────────────────── */
+    .section { margin-bottom: 36px; }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+    .section-label::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title .num {
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      padding: 3px 9px;
+      border-radius: 100px;
+      flex-shrink: 0;
+    }
+
+    p.body-text {
+      font-size: 15px;
+      color: var(--body);
+      margin-bottom: 12px;
+    }
+
+    /* ─── SUBSECTION ────────────────────────────────────────── */
+    .sub { margin: 20px 0 4px; }
+    .sub-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sub-title::before {
+      content: "";
+      width: 3px;
+      height: 14px;
+      background: linear-gradient(to bottom, var(--blue), #A78BFA);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* ─── LIST ──────────────────────────────────────────────── */
+    ul.dot-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 12px;
+    }
+    ul.dot-list li {
+      font-size: 14px;
+      color: var(--body);
+      padding: 7px 0 7px 22px;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    ul.dot-list li:last-child { border-bottom: none; }
+    ul.dot-list li::before {
+      content: "›";
+      position: absolute;
+      left: 4px;
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 16px;
+      top: 6px;
+    }
+
+    /* ─── CARD ──────────────────────────────────────────────── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin: 12px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .card-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .card-icon {
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      background: var(--blue-soft);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .card-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .card-sub {
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .card p.card-body {
+      font-size: 14px;
+      color: var(--body);
+      margin: 0 0 10px;
+    }
+    .card a.card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--blue);
+      text-decoration: none;
+      background: var(--blue-soft);
+      padding: 5px 12px;
+      border-radius: 100px;
+      transition: background 0.2s;
+    }
+    .card a.card-link:hover { background: #D8DDFC; }
+    .card a.card-link::after { content: "→"; }
+
+    /* ─── HIGHLIGHT BOX ─────────────────────────────────────── */
+    .highlight {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+      border-left: 4px solid var(--green);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #166534;
+      line-height: 1.6;
+    }
+    .highlight strong { color: #14532D; }
+
+    .warn-box {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-left: 4px solid #F59E0B;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: #78350F;
+      line-height: 1.6;
+    }
+
+    /* ─── CONTACT TABLE ─────────────────────────────────────── */
+    .contact-grid {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-row .cr-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      width: 110px;
+      flex-shrink: 0;
+    }
+    .contact-row .cr-value {
+      font-size: 14px;
+      color: var(--text);
+      font-weight: 500;
+    }
+    .contact-row a { color: var(--blue); text-decoration: none; font-weight: 600; }
+    .contact-row a:hover { text-decoration: underline; }
+
+    /* ─── DIVIDER ───────────────────────────────────────────── */
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 32px 0;
+    }
+
+    /* ─── FOOTER ────────────────────────────────────────────── */
+    footer {
+      background: #1C1E2E;
+      color: #7A7E96;
+      text-align: center;
+      padding: 36px 24px;
+      font-size: 13px;
+    }
+    footer p { margin-bottom: 6px; }
+    footer a { color: #7B8FFF; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    footer .footer-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(74,95,232,0.15);
+      border: 1px solid rgba(74,95,232,0.25);
+      color: #9AABFF;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 56px 20px 44px; }
+      .container { padding: 36px 18px 64px; }
+      .tab { padding: 14px 16px; font-size: 13px; }
+      .contact-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+      .contact-row .cr-label { width: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HERO ───────────────────────────────────────────────────── -->
+<div class="hero">
+  <div class="hero-chip">Legal Documents</div>
+  <h1>Sajid <span>Khokhar</span> Apps</h1>
+  <p class="hero-sub">Privacy Policy &amp; Terms of Use</p>
+  <p class="hero-sub" style="font-size:13px;color:#6B7094;">Covers all apps published on the Apple App Store</p>
+  <span class="hero-date">Last Updated: June 17, 2026</span>
+</div>
+
+<!-- ── STICKY NAV ─────────────────────────────────────────────── -->
+<div class="nav">
+  <div class="nav-inner">
+    <button class="tab active" onclick="switchTab('privacy',this)">
+      <span class="icon">🔒</span> Privacy Policy
+    </button>
+    <button class="tab" onclick="switchTab('terms',this)">
+      <span class="icon">📄</span> Terms of Use
+    </button>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!--  PRIVACY POLICY PAGE                                        -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div id="privacy" class="page active">
+<div class="container">
+
+  <!-- Intro card -->
+  <div class="intro-card">
+    <div class="ic-icon">🛡️</div>
+    <p>This Privacy Policy applies to all apps ("Apps") developed and published by <strong>Sajid Khokhar</strong> on the Apple App Store — including <strong>ExpenseTracker</strong> and all future apps. We believe the less information we know about you, the better. It is impossible to lose, misuse, or abuse information we do not have.</p>
+  </div>
+
+  <!-- 1. Contact -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title"><span class="num">01</span>Contact Information</div>
+    <p class="body-text">The developer responsible for your data under applicable privacy laws is:</p>
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="cr-label">Developer</span>
+        <span class="cr-value">Sajid Khokhar</span>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Publisher</span>
+        <span class="cr-value">Sajid Khokhar Apps</span>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Support</span>
+        <a href="mailto:support.sajidapps@gmail.com" class="cr-value">support.sajidapps@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Personal Data -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title"><span class="num">02</span>Personal Data</div>
+    <div class="highlight">
+      <strong>Our commitment:</strong> We do not collect or have access to the personal data you save in our Apps. All your data is stored locally on your device. We cannot see your expenses, income, categories, budgets, or notes.
+    </div>
+    <p class="body-text">When you use our Apps, we may record some usage analytics, subscription validation, and crash logs. The sole purpose of this data is to help us make better decisions on where to focus our efforts and improve our software.</p>
+    <p class="body-text">You may provide data directly, such as when you contact us for support. Such data is limited to your email address only.</p>
+  </div>
+
+  <!-- 3. What We Collect -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title"><span class="num">03</span>What We Collect &amp; Why</div>
+
+    <div class="sub">
+      <div class="sub-title">Subscription Validation</div>
+      <p class="body-text">Used to manage and update your subscription status. We collect:</p>
+      <ul class="dot-list">
+        <li>In-App purchase receipts (validated with Apple)</li>
+        <li>Subscription status and entitlement checks</li>
+        <li>Subscription product fetch requests</li>
+      </ul>
+    </div>
+
+    <div class="sub">
+      <div class="sub-title">Usage Analytics</div>
+      <p class="body-text">App usage analytics are minimal but essential to help us run and improve our products. We collect:</p>
+      <ul class="dot-list">
+        <li>Application starts and ends</li>
+        <li>Device locale (language/region)</li>
+        <li>Device type, CPU architecture, and OS version</li>
+      </ul>
+      <p class="body-text" style="margin-top:8px;">We use <strong>Firebase Analytics</strong> to collect and manage this data. All data is anonymized and aggregated.</p>
+    </div>
+
+    <div class="sub">
+      <div class="sub-title">Crash Logs</div>
+      <p class="body-text">Crash logs are automatically sent on the next App start. These logs contain anonymized data about the crash to help us identify causes and provide fixes. They do <strong>not</strong> contain any of your personal or financial data. We collect:</p>
+      <ul class="dot-list">
+        <li>Anonymized bundle identifier and short bundle version string</li>
+        <li>Device type, CPU architecture, and OS version</li>
+        <li>Timestamp when the crash occurred</li>
+        <li>A generated UUID to prevent duplicate reports</li>
+        <li>Plain-text exception class name and message (if applicable)</li>
+        <li>Low-level crash data: instruction pointer, method/function names, signal data</li>
+        <li>The application log file</li>
+      </ul>
+      <p class="body-text" style="margin-top:8px;">We use <strong>Firebase Crashlytics</strong> to collect and manage this data.</p>
+    </div>
+
+    <div class="sub">
+      <div class="sub-title">Data You Provide Directly</div>
+      <ul class="dot-list">
+        <li>Your name and display preferences (stored locally only)</li>
+        <li>Email address — only when you contact us for support</li>
+        <li>Financial data you enter (expenses, income, categories, budgets, notes) — stored locally on your device only</li>
+        <li>Profile preferences (avatar, currency, goals, theme) — stored locally only</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 4. Third-Party Services -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title"><span class="num">04</span>Third-Party Services</div>
+    <p class="body-text">Our Apps integrate with the following third-party services, each governed by its own Privacy Policy:</p>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="card-icon">🔥</div>
+        <div>
+          <div class="card-name">Firebase — Google LLC</div>
+          <div class="card-sub">Analytics · Crashlytics · Auth · Remote Config</div>
+        </div>
+      </div>
+      <p class="card-body">Firebase Authentication uses anonymous sign-in to identify app sessions — no personal data is sent. Analytics and Crashlytics collect anonymized, aggregated data only. Remote Config delivers dynamic app configuration.</p>
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener" class="card-link">View Firebase Privacy Policy</a>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div class="card-icon">🍎</div>
+        <div>
+          <div class="card-name">Apple Services</div>
+          <div class="card-sub">StoreKit · Foundation Models · LocalAuthentication · iCloud</div>
+        </div>
+      </div>
+      <p class="card-body">In-App purchases and subscriptions are processed by Apple via StoreKit — we do not collect or store payment information. AI features use Apple Foundation Models, which run entirely on-device. Biometric Lock uses Apple's Secure Enclave — we never access biometric data. Cloud Sync (premium) uses iCloud and is governed by Apple's privacy policy.</p>
+      <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener" class="card-link">View Apple Privacy Policy</a>
+    </div>
+
+    <div class="highlight">
+      <strong>Ad-Free:</strong> Our Apps do not display advertisements. We do not sell, trade, rent, or share your personal information with advertisers or any third parties for marketing purposes.
+    </div>
+  </div>
+
+  <!-- 5. Data Storage -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title"><span class="num">05</span>Data Storage &amp; Security</div>
+    <ul class="dot-list">
+      <li>All financial and personal data is stored locally on your device using SwiftData and UserDefaults</li>
+      <li>AI-generated insights and chat history are stored locally on your device only</li>
+      <li>We do not operate external servers to store your personal financial data</li>
+      <li>Biometric data (Face ID / Touch ID) is processed entirely by Apple's Secure Enclave — we never access it</li>
+      <li>Cloud Sync (premium feature) uses iCloud, governed by Apple's iCloud Privacy Policy</li>
+      <li>We apply appropriate technical safeguards to protect your data</li>
+    </ul>
+  </div>
+
+  <!-- 6. Transfer of Data -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title"><span class="num">06</span>Transfer of Data</div>
+    <p class="body-text">Your data will only be passed on without your explicit prior consent in the following cases:</p>
+    <ul class="dot-list">
+      <li>If necessary to investigate illegal use of our services or for legal prosecution, personal data may be passed on to law-enforcement authorities or harmed third parties — only where there are specific indications of illegal or abusive behaviour</li>
+      <li>If required to enforce our Terms of Use or other agreements</li>
+      <li>If legally required to provide information to public bodies on request (law-enforcement, tax authorities, etc.)</li>
+    </ul>
+    <p class="body-text" style="margin-top:8px;">Firebase services are operated by Google LLC and may process anonymized, aggregated data in the United States or other countries.</p>
+  </div>
+
+  <!-- 7. Your Rights -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title"><span class="num">07</span>Your Rights &amp; Controls</div>
+
+    <div class="sub">
+      <div class="sub-title">Access &amp; Edit</div>
+      <p class="body-text">All data you enter is accessible and editable within the App at any time.</p>
+    </div>
+    <div class="sub">
+      <div class="sub-title">Delete Your Data</div>
+      <p class="body-text">Use <strong>"Delete Account"</strong> in Settings to permanently erase all locally stored data. This action cannot be undone.</p>
+    </div>
+    <div class="sub">
+      <div class="sub-title">Reset Data</div>
+      <p class="body-text">Use <strong>"Reset Data"</strong> in Settings to wipe transactions while keeping your settings and categories.</p>
+    </div>
+    <div class="sub">
+      <div class="sub-title">Push Notifications</div>
+      <p class="body-text">All notifications are local and generated on-device. Enable or disable anytime via <strong>iOS Settings → Notifications</strong>.</p>
+    </div>
+    <div class="sub">
+      <div class="sub-title">Analytics Opt-Out</div>
+      <p class="body-text">Adjust <strong>iOS Settings → Privacy &amp; Security → Tracking</strong> to limit analytics. Firebase respects the iOS Limit Ad Tracking preference.</p>
+    </div>
+  </div>
+
+  <!-- 8. COPPA -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <div class="section-title"><span class="num">08</span>Children's Privacy (COPPA)</div>
+    <p class="body-text">The Children's Online Privacy Protection Act (COPPA) is a United States federal law that gives parents increased control over information collected from children online. Our Apps are not directed to children under the age of 13, nor do we knowingly collect information from children under 13.</p>
+    <p class="body-text">If you are under 13, please do not provide any personal information through our Apps. If a child under 13 provides us with personal information, a parent or legal guardian may contact us to obtain and/or delete it:</p>
+    <div class="contact-grid" style="margin-top:12px;">
+      <div class="contact-row">
+        <span class="cr-label">Email</span>
+        <a href="mailto:support.sajidapps@gmail.com" class="cr-value">support.sajidapps@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. Data Retention -->
+  <div class="section">
+    <div class="section-label">Section 9</div>
+    <div class="section-title"><span class="num">09</span>Data Retention</div>
+    <ul class="dot-list">
+      <li>Local data is retained on your device until you delete it in-App or uninstall the App</li>
+      <li>Firebase Analytics data retained per Google's policy (typically up to 2 months)</li>
+      <li>Firebase Crashlytics data retained per Google's policy (typically up to 90 days)</li>
+    </ul>
+  </div>
+
+  <!-- 10. Changes -->
+  <div class="section">
+    <div class="section-label">Section 10</div>
+    <div class="section-title"><span class="num">10</span>Changes to This Policy</div>
+    <p class="body-text">We may make changes to this Privacy Policy as applicable laws, relevant technologies, and our data processing practices change. We will notify you of changes by posting the updated policy on this page and, where appropriate, within our Apps.</p>
+    <p class="body-text">Changes become effective upon posting, as indicated by the "Last Updated" date at the top of this page. We encourage you to review this Privacy Policy periodically.</p>
+  </div>
+
+  <!-- 11. Contact -->
+  <div class="section">
+    <div class="section-label">Section 11</div>
+    <div class="section-title"><span class="num">11</span>Questions?</div>
+    <p class="body-text">If you have any questions at all, about your data or any other query, please contact us:</p>
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="cr-label">Developer</span>
+        <span class="cr-value">Sajid Khokhar</span>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Publisher</span>
+        <span class="cr-value">Sajid Khokhar Apps</span>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Email</span>
+        <a href="mailto:support.sajidapps@gmail.com" class="cr-value">support.sajidapps@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Response</span>
+        <span class="cr-value">Within 30 business days</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+</div><!-- /privacy page -->
+
+<!-- ════════════════════════════════════════════════════════════ -->
+<!--  TERMS OF USE PAGE                                          -->
+<!-- ════════════════════════════════════════════════════════════ -->
+<div id="terms" class="page">
+<div class="container">
+
+  <!-- Intro card -->
+  <div class="intro-card">
+    <div class="ic-icon">📋</div>
+    <p>These Terms of Use ("Terms") apply to all apps ("Apps") published by <strong>Sajid Khokhar Apps</strong> on the Apple App Store. By downloading or using any of our Apps, you agree to be bound by these Terms.</p>
+  </div>
+
+  <!-- 1. Acceptance -->
+  <div class="section">
+    <div class="section-label">Section 1</div>
+    <div class="section-title"><span class="num">01</span>Acceptance of Terms</div>
+    <p class="body-text">By downloading, installing, or using any application published by Sajid Khokhar Apps, you ("User", "you") agree to be bound by these Terms of Use. If you do not agree, please do not download or use our Apps.</p>
+    <p class="body-text">These Terms apply to all apps published under the Sajid Khokhar Apps developer account, including ExpenseTracker and all future apps.</p>
+  </div>
+
+  <!-- 2. License -->
+  <div class="section">
+    <div class="section-label">Section 2</div>
+    <div class="section-title"><span class="num">02</span>License to Use</div>
+    <p class="body-text">Subject to these Terms, we grant you a personal, non-exclusive, non-transferable, revocable license to use our Apps solely for your personal, non-commercial purposes on Apple devices you own or control.</p>
+    <p class="body-text"><strong>You may NOT:</strong></p>
+    <ul class="dot-list">
+      <li>Copy, modify, or distribute the App or its content</li>
+      <li>Reverse engineer, decompile, or disassemble the App</li>
+      <li>Remove any proprietary notices or labels from the App</li>
+      <li>Use the App for commercial purposes without prior written consent</li>
+      <li>Use the App in any way that violates applicable laws or regulations</li>
+    </ul>
+  </div>
+
+  <!-- 3. In-App Purchases -->
+  <div class="section">
+    <div class="section-label">Section 3</div>
+    <div class="section-title"><span class="num">03</span>In-App Purchases &amp; Subscriptions</div>
+
+    <div class="sub">
+      <div class="sub-title">Pricing</div>
+      <p class="body-text">Some Apps offer premium features through in-app purchases or auto-renewing subscriptions. All prices are displayed in the App and are processed by Apple through the App Store.</p>
+    </div>
+
+    <div class="sub">
+      <div class="sub-title">Auto-Renewal</div>
+      <p class="body-text">Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current billing period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period at the same price.</p>
+    </div>
+
+    <div class="sub">
+      <div class="sub-title">Managing &amp; Cancelling</div>
+      <p class="body-text">Manage or cancel subscriptions anytime via <strong>Apple ID Account Settings → Subscriptions</strong>. Cancellation takes effect at the end of the current billing period — you retain access until then.</p>
+    </div>
+
+    <div class="sub">
+      <div class="sub-title">Refunds</div>
+      <p class="body-text">All purchases are final and non-refundable except as required by applicable law or Apple's refund policy. To request a refund, use Apple's "Report a Problem" feature at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600;">reportaproblem.apple.com</a>.</p>
+    </div>
+  </div>
+
+  <!-- 4. User Data -->
+  <div class="section">
+    <div class="section-label">Section 4</div>
+    <div class="section-title"><span class="num">04</span>User Data &amp; Content</div>
+    <p class="body-text">You retain full ownership of all data you enter into our Apps (expenses, income, notes, categories, etc.). We claim no rights over your personal data.</p>
+    <div class="warn-box">
+      ⚠️ <strong>Financial Disclaimer:</strong> Our Apps are personal finance tracking tools only. They do <strong>not</strong> provide professional financial, tax, legal, or investment advice. Always verify important financial decisions with a qualified professional.
+    </div>
+    <p class="body-text">You are solely responsible for the accuracy of data you enter, maintaining backups of your data, and any financial decisions made based on App information.</p>
+  </div>
+
+  <!-- 5. Disclaimer -->
+  <div class="section">
+    <div class="section-label">Section 5</div>
+    <div class="section-title"><span class="num">05</span>Disclaimer of Warranties</div>
+    <p class="body-text">Our Apps are provided on an "AS IS" and "AS AVAILABLE" basis, without warranties of any kind, either express or implied, including but not limited to:</p>
+    <ul class="dot-list">
+      <li>Fitness for a particular purpose</li>
+      <li>Accuracy or completeness of any information in the App</li>
+      <li>Uninterrupted or error-free operation</li>
+      <li>That defects will be corrected</li>
+    </ul>
+  </div>
+
+  <!-- 6. Liability -->
+  <div class="section">
+    <div class="section-label">Section 6</div>
+    <div class="section-title"><span class="num">06</span>Limitation of Liability</div>
+    <p class="body-text">To the maximum extent permitted by applicable law, Sajid Khokhar Apps shall not be liable for:</p>
+    <ul class="dot-list">
+      <li>Any indirect, incidental, special, consequential, or punitive damages</li>
+      <li>Loss of data, profits, or business opportunities</li>
+      <li>Financial decisions made based on App information</li>
+      <li>Damages resulting from unauthorized access to your data</li>
+    </ul>
+    <p class="body-text" style="margin-top:10px;">Our total liability for any claim arising from these Terms shall not exceed the amount you paid for the App or subscription in the 12 months preceding the claim.</p>
+  </div>
+
+  <!-- 7. IP -->
+  <div class="section">
+    <div class="section-label">Section 7</div>
+    <div class="section-title"><span class="num">07</span>Intellectual Property</div>
+    <p class="body-text">All intellectual property rights in our Apps — including design, code, graphics, logos, and content — are owned by Sajid Khokhar Apps or our licensors. Nothing in these Terms grants you any right to use our trademarks, logos, or brand names without prior written permission.</p>
+  </div>
+
+  <!-- 8. Updates -->
+  <div class="section">
+    <div class="section-label">Section 8</div>
+    <div class="section-title"><span class="num">08</span>App Updates &amp; Availability</div>
+    <p class="body-text">We reserve the right to update, modify, or discontinue any App or feature at any time with or without notice. We are not liable if an App is unavailable at any time or for any period. Existing subscribers will be notified in advance of any pricing changes.</p>
+  </div>
+
+  <!-- 9. Termination -->
+  <div class="section">
+    <div class="section-label">Section 9</div>
+    <div class="section-title"><span class="num">09</span>Termination</div>
+    <p class="body-text">These Terms remain in effect until terminated. Your rights under these Terms terminate automatically if you fail to comply with any provision. We reserve the right to suspend or terminate access to our Apps at our discretion for conduct that violates these Terms or is harmful to users or third parties.</p>
+  </div>
+
+  <!-- 10. Governing Law -->
+  <div class="section">
+    <div class="section-label">Section 10</div>
+    <div class="section-title"><span class="num">10</span>Governing Law</div>
+    <p class="body-text">These Terms shall be governed by and construed in accordance with the laws of <strong>India</strong>, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts of India.</p>
+  </div>
+
+  <!-- 11. Severability -->
+  <div class="section">
+    <div class="section-label">Section 11</div>
+    <div class="section-title"><span class="num">11</span>Severability</div>
+    <p class="body-text">If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary. The remaining provisions will continue in full force and effect.</p>
+  </div>
+
+  <!-- 12. Changes -->
+  <div class="section">
+    <div class="section-label">Section 12</div>
+    <div class="section-title"><span class="num">12</span>Changes to Terms</div>
+    <p class="body-text">We reserve the right to modify these Terms at any time. We will update the "Last Updated" date at the top. For material changes, we will make reasonable efforts to notify users via in-app notices or App Store update notes. Continued use of our Apps after any update constitutes your acceptance of the revised Terms.</p>
+  </div>
+
+  <!-- 13. Contact -->
+  <div class="section">
+    <div class="section-label">Section 13</div>
+    <div class="section-title"><span class="num">13</span>Contact Us</div>
+    <p class="body-text">For any questions or notices regarding these Terms of Use:</p>
+    <div class="contact-grid">
+      <div class="contact-row">
+        <span class="cr-label">Developer</span>
+        <span class="cr-value">Sajid Khokhar</span>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Publisher</span>
+        <span class="cr-value">Sajid Khokhar Apps</span>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Email</span>
+        <a href="mailto:support.sajidapps@gmail.com" class="cr-value">support.sajidapps@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="cr-label">Response</span>
+        <span class="cr-value">Within 30 business days</span>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+</div><!-- /terms page -->
+
+<!-- ── FOOTER ─────────────────────────────────────────────────── -->
+<footer>
+  <p>© 2026 Sajid Khokhar Apps. All rights reserved.</p>
+  <p style="margin-top:6px;">
+    <a href="#" onclick="switchTab('privacy', document.querySelectorAll('.tab')[0]); return false;">Privacy Policy</a>
+    &nbsp;·&nbsp;
+    <a href="#" onclick="switchTab('terms', document.querySelectorAll('.tab')[1]); return false;">Terms of Use</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:support.sajidapps@gmail.com">Contact</a>
+  </p>
+  <div class="footer-badge">🍎 Published on Apple App Store</div>
+</footer>
+
+<script>
+  function switchTab(id, btn) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // Handle URL hash on load
+  window.addEventListener('DOMContentLoaded', () => {
+    if (window.location.hash === '#terms') {
+      switchTab('terms', document.querySelectorAll('.tab')[1]);
+    }
+  });
+</script>
+
+</body>
+</html>
