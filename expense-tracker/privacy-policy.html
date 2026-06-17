@@ -1,343 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Axio Money</title>
   <meta name="description" content="Privacy Policy for Axio Money: Expense Tracker by Sajid Khokhar." />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg:              #F2F2F7;
-      --card:            #FFFFFF;
-      --text-primary:    #000000;
-      --text-secondary:  #3C3C43;
-      --text-tertiary:   #8E8E93;
-      --separator:       #E5E5EA;
-      --accent:          #007AFF;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text-primary);
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 17px;
-      line-height: 1.47;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* ─── HEADER ─────────────────────────────────────────────── */
-    .page-header {
-      background: var(--card);
-      border-bottom: 1px solid var(--separator);
-      padding: 56px 20px 28px;
-      text-align: center;
-    }
-    .page-header h1 {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 6px;
-    }
-    .page-header .app-name {
-      font-size: 15px;
-      color: var(--text-tertiary);
-      margin-bottom: 10px;
-    }
-    .page-header .date {
-      font-size: 13px;
-      color: var(--text-tertiary);
-    }
-    .doc-link {
-      display: inline-block;
-      margin-top: 14px;
-      font-size: 15px;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .doc-link:hover { text-decoration: underline; }
-
-    /* ─── CONTAINER ──────────────────────────────────────────── */
-    .container {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 32px 16px 64px;
-    }
-
-    /* ─── GROUP ──────────────────────────────────────────────── */
-    .group { margin-bottom: 32px; }
-
-    .group-label {
-      font-size: 13px;
-      font-weight: 400;
-      color: var(--text-tertiary);
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      padding: 0 16px 8px;
-    }
-
-    .group-note {
-      font-size: 13px;
-      color: var(--text-tertiary);
-      line-height: 1.5;
-      padding: 8px 16px 0;
-    }
-    .group-note a { color: var(--accent); text-decoration: none; }
-
-    /* ─── CARD ───────────────────────────────────────────────── */
-    .card {
-      background: var(--card);
-      border-radius: 12px;
-      overflow: hidden;
-    }
-
-    .row {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-      padding: 13px 16px;
-      border-bottom: 1px solid var(--separator);
-      min-height: 48px;
-    }
-    .row:last-child { border-bottom: none; }
-
-    .row-label {
-      font-size: 17px;
-      color: var(--text-primary);
-      flex-shrink: 0;
-    }
-    .row-value {
-      font-size: 15px;
-      color: var(--text-tertiary);
-      text-align: right;
-    }
-    .row-value a { color: var(--accent); text-decoration: none; }
-    .row-value a:hover { text-decoration: underline; }
-
-    /* Full-width text row */
-    .row-block {
-      padding: 13px 16px;
-      border-bottom: 1px solid var(--separator);
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.6;
-    }
-    .row-block:last-child { border-bottom: none; }
-    .row-block strong { color: var(--text-primary); font-weight: 600; }
-    .row-block a { color: var(--accent); text-decoration: none; }
-
-    /* ─── PLAIN TEXT BLOCK ───────────────────────────────────── */
-    .text-card {
-      background: var(--card);
-      border-radius: 12px;
-      padding: 14px 16px;
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.65;
-    }
-    .text-card strong { color: var(--text-primary); font-weight: 600; }
-    .text-card a { color: var(--accent); text-decoration: none; }
-
-    /* ─── FOOTER ─────────────────────────────────────────────── */
-    footer {
-      text-align: center;
-      padding: 0 16px 48px;
-      font-size: 13px;
-      color: var(--text-tertiary);
-      line-height: 1.9;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
-
-    @media (max-width: 600px) {
-      .page-header { padding: 44px 16px 22px; }
-      .container { padding: 24px 12px 48px; }
-      .page-header h1 { font-size: 24px; }
-    }
-  </style>
+  <link rel="stylesheet" href="theme.css" />
 </head>
+
 <body>
 
-<div class="page-header">
-  <h1>Privacy Policy</h1>
-  <p class="app-name">Axio Money: Expense Tracker</p>
-  <p class="date">Last updated June 17, 2026</p>
-  <a href="terms.html" class="doc-link">Terms of Use</a>
-</div>
-
-<div class="container">
-
-  <div class="group">
-    <div class="text-card">
-      Axio Money does not collect, transmit, or store your personal financial data on any server. Everything you enter stays on your device. This policy explains what limited data we do collect and why.
-    </div>
-  </div>
-
-  <!-- 1. Information We Collect -->
-  <div class="group">
-    <div class="group-label">Information We Collect</div>
-    <div class="card">
-      <div class="row-block">
-        <strong>Usage analytics.</strong> We collect anonymized data about app usage — such as app opens, device type, OS version, and locale — via Firebase Analytics. This data is aggregated and cannot be used to identify you.
-      </div>
-      <div class="row-block">
-        <strong>Crash reports.</strong> If the app crashes, an anonymized report is sent on the next launch via Firebase Crashlytics to help us diagnose and fix issues. Crash reports do not contain any of your financial data.
-      </div>
-      <div class="row-block">
-        <strong>Subscription status.</strong> Purchase receipts are validated with Apple via StoreKit to manage your premium access. We do not store payment information.
-      </div>
-      <div class="row-block">
-        <strong>Support email.</strong> If you contact us for support, we receive your email address solely to respond to your inquiry.
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="brand">
+        <div class="brand-logo">A</div>
+        <span class="brand-name">Axio Money</span>
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Switch Theme">
+          <!-- Icon will be injected by script.js -->
+        </button>
       </div>
     </div>
-    <div class="group-note">We do not collect names, financial data, location, contacts, or any personally identifiable information during normal app use.</div>
-  </div>
+  </header>
 
-  <!-- 2. Data on Your Device -->
-  <div class="group">
-    <div class="group-label">Data Stored on Your Device Only</div>
-    <div class="card">
-      <div class="row-block">
-        The following data is entered by you and stored locally on your device only. We have no access to it.
-      </div>
-      <div class="row-block">Expenses, income, categories, and notes.</div>
-      <div class="row-block">Financial goals and savings objectives.</div>
-      <div class="row-block">AI chat history and generated insights.</div>
-      <div class="row-block">Profile preferences including currency, theme, avatar, and notification settings.</div>
-    </div>
-    <div class="group-note">None of this data leaves your device unless you explicitly export it yourself using the in-app export feature.</div>
-  </div>
-
-  <!-- 3. AI Features -->
-  <div class="group">
-    <div class="group-label">AI Features</div>
-    <div class="card">
-      <div class="row-block">
-        <strong>On-device only.</strong> All AI features — including the financial assistant, spending insights, and savings tips — use Apple Foundation Models and run entirely on your device. Your financial data is never sent to external AI servers or third parties.
-      </div>
-      <div class="row-block">
-        <strong>Device requirement.</strong> AI features require a compatible Apple device that supports Apple Foundation Models. On unsupported devices, these features are simply unavailable and no data is collected.
-      </div>
-      <div class="row-block">
-        <strong>Chat history.</strong> AI conversation history is stored locally on your device and is permanently deleted when you use Delete Account in Settings.
+  <!-- Main Layout -->
+  <main class="main-layout">
+    
+    <!-- Hero Card -->
+    <div class="hero-card">
+      <div class="app-subtitle">Axio Money: Expense Tracker</div>
+      <h1>Privacy Policy</h1>
+      <div class="update-date">Last updated June 17, 2026</div>
+      <div>
+        <a href="#" class="doc-link" data-link-type="terms" style="margin-top: 14px; font-weight: 600; color: var(--accent); text-decoration: none;">Terms of Use &rarr;</a>
       </div>
     </div>
-  </div>
 
-  <!-- 4. Third-Party Services -->
-  <div class="group">
-    <div class="group-label">Third-Party Services</div>
-    <div class="card">
-      <div class="row">
-        <span class="row-label">Firebase — Google LLC</span>
-        <span class="row-value"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+    <!-- Dual Column Container -->
+    <div class="grid-container">
+      
+      <!-- Sticky Sidebar (Table of Contents) -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3>Sections</h3>
+          <ul class="toc-list">
+            <li class="toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
+            <li class="toc-item" data-target="collect"><a href="#collect">1. Information We Collect</a></li>
+            <li class="toc-item" data-target="device"><a href="#device">2. Data on Your Device</a></li>
+            <li class="toc-item" data-target="ai"><a href="#ai">3. AI Features</a></li>
+            <li class="toc-item" data-target="third-party"><a href="#third-party">4. Third-Party Services</a></li>
+            <li class="toc-item" data-target="controls"><a href="#controls">5. Your Controls</a></li>
+            <li class="toc-item" data-target="children"><a href="#children">6. Children's Privacy</a></li>
+            <li class="toc-item" data-target="retention"><a href="#retention">7. Data Retention</a></li>
+            <li class="toc-item" data-target="changes"><a href="#changes">8. Policy Changes</a></li>
+            <li class="toc-item" data-target="contact"><a href="#contact">9. Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Content Column -->
+      <div class="content-area">
+        
+        <!-- Search Bar -->
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search privacy policy..." />
+            <button id="search-clear" class="search-clear" title="Clear search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search Empty State -->
+        <div id="search-empty" class="search-empty">
+          <div class="search-empty-icon">🔍</div>
+          <h4>No matches found</h4>
+          <p>We couldn't find any sections matching your search term. Please try another query.</p>
+        </div>
+
+        <!-- Sections Content -->
+        
+        <!-- Intro -->
+        <div class="group" id="intro">
+          <div class="group-label">Introduction</div>
+          <div class="glass-card card-intro-text">
+            Axio Money does not collect, transmit, or store your personal financial data on any server. Everything you enter stays on your device. This policy explains what limited data we do collect and why.
+          </div>
+        </div>
+
+        <!-- 1. Information We Collect -->
+        <div class="group" id="collect">
+          <div class="group-label">1. Information We Collect</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Usage analytics.</strong> We collect anonymized data about app usage — such as app opens, device type, OS version, and locale — via Firebase Analytics. This data is aggregated and cannot be used to identify you.
+            </div>
+            <div class="row-block">
+              <strong>Crash reports.</strong> If the app crashes, an anonymized report is sent on the next launch via Firebase Crashlytics to help us diagnose and fix issues. Crash reports do not contain any of your financial data.
+            </div>
+            <div class="row-block">
+              <strong>Subscription status.</strong> Purchase receipts are validated with Apple via StoreKit to manage your premium access. We do not store payment information.
+            </div>
+            <div class="row-block">
+              <strong>Support email.</strong> If you contact us for support, we receive your email address solely to respond to your inquiry.
+            </div>
+          </div>
+          <div class="group-note">We do not collect names, financial data, location, contacts, or any personally identifiable information during normal app use.</div>
+        </div>
+
+        <!-- 2. Data Stored on Your Device Only -->
+        <div class="group" id="device">
+          <div class="group-label">2. Data Stored on Your Device Only</div>
+          <div class="glass-card">
+            <div class="row-block">
+              The following data is entered by you and stored locally on your device only. We have no access to it.
+            </div>
+            <div class="row-block">Expenses, income, categories, and notes.</div>
+            <div class="row-block">Financial goals and savings objectives.</div>
+            <div class="row-block">AI chat history and generated insights.</div>
+            <div class="row-block">Profile preferences including currency, theme, avatar, and notification settings.</div>
+          </div>
+          <div class="group-note">None of this data leaves your device unless you explicitly export it yourself using the in-app export feature.</div>
+        </div>
+
+        <!-- 3. AI Features -->
+        <div class="group" id="ai">
+          <div class="group-label">3. AI Features</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>On-device only.</strong> All AI features — including the financial assistant, spending insights, and savings tips — use Apple Foundation Models and run entirely on your device. Your financial data is never sent to external AI servers or third parties.
+            </div>
+            <div class="row-block">
+              <strong>Device requirement.</strong> AI features require a compatible Apple device that supports Apple Foundation Models. On unsupported devices, these features are simply unavailable and no data is collected.
+            </div>
+            <div class="row-block">
+              <strong>Chat history.</strong> AI conversation history is stored locally on your device and is permanently deleted when you use Delete Account in Settings.
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Third-Party Services -->
+        <div class="group" id="third-party">
+          <div class="group-label">4. Third-Party Services</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Firebase — Google LLC</span>
+              <span class="row-value"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+            </div>
+            <div class="row-block">
+              Used for anonymized analytics, crash reporting, anonymous authentication, and remote configuration.
+            </div>
+            <div class="row">
+              <span class="row-label">Apple — StoreKit &amp; iCloud</span>
+              <span class="row-value"><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></span>
+            </div>
+            <div class="row-block">
+              Subscriptions are processed by Apple via StoreKit. iCloud sync is available to premium users and governed by Apple's privacy policy.
+            </div>
+          </div>
+          <div class="group-note">Axio Money is ad-free. We do not sell, share, or rent your personal information to advertisers or any third party.</div>
+        </div>
+
+        <!-- 5. Your Controls -->
+        <div class="group" id="controls">
+          <div class="group-label">5. Your Controls</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Access &amp; Edit</span>
+              <span class="row-value">Available in app</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Export Data</span>
+              <span class="row-value">CSV, JSON, PDF, Text, or Markdown</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Delete Account</span>
+              <span class="row-value">Settings &rarr; Delete Account</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Push Notifications</span>
+              <span class="row-value">iOS Settings &rarr; Notifications</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Analytics Opt-Out</span>
+              <span class="row-value">iOS Settings &rarr; Privacy &rarr; Tracking</span>
+            </div>
+          </div>
+          <div class="group-note">Deleting your account permanently erases all locally stored data including AI chat history. This action cannot be undone.</div>
+        </div>
+
+        <!-- 6. Children's Privacy -->
+        <div class="group" id="children">
+          <div class="group-label">6. Children's Privacy</div>
+          <div class="glass-card card-intro-text">
+            Axio Money is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us at <a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a> and we will promptly delete it.
+          </div>
+        </div>
+
+        <!-- 7. Data Retention -->
+        <div class="group" id="retention">
+          <div class="group-label">7. Data Retention</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Your local data</span>
+              <span class="row-value">Until deleted or app uninstalled</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Firebase Analytics</span>
+              <span class="row-value">Up to 2 months</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Firebase Crashlytics</span>
+              <span class="row-value">Up to 90 days</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Changes to This Policy -->
+        <div class="group" id="changes">
+          <div class="group-label">8. Changes to This Policy</div>
+          <div class="glass-card card-intro-text">
+            We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. For significant changes, we will notify you via in-app notices or App Store update notes. Continued use of the app after changes constitutes your acceptance of the updated policy.
+          </div>
+        </div>
+
+        <!-- 9. Contact -->
+        <div class="group" id="contact">
+          <div class="group-label">9. Contact</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Developer</span>
+              <span class="row-value">Sajid Khokhar</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Email</span>
+              <span class="row-value"><a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a></span>
+            </div>
+            <div class="row">
+              <span class="row-label">Response time</span>
+              <span class="row-value">Within 30 days</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="row-block" style="padding-top:0; border-bottom: 1px solid var(--separator);">
-        Used for anonymized analytics, crash reporting, anonymous authentication, and remote configuration.
-      </div>
-      <div class="row">
-        <span class="row-label">Apple — StoreKit &amp; iCloud</span>
-        <span class="row-value"><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></span>
-      </div>
-      <div class="row-block" style="padding-top:0;">
-        Subscriptions are processed by Apple via StoreKit. iCloud sync is available to premium users and governed by Apple's privacy policy.
-      </div>
+
     </div>
-    <div class="group-note">Axio Money is ad-free. We do not sell, share, or rent your personal information to advertisers or any third party.</div>
-  </div>
 
-  <!-- 5. Your Controls -->
-  <div class="group">
-    <div class="group-label">Your Controls</div>
-    <div class="card">
-      <div class="row">
-        <span class="row-label">Access &amp; Edit</span>
-        <span class="row-value">Available in app</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Export Data</span>
-        <span class="row-value">CSV, JSON, PDF, Text, or Markdown</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Delete Account</span>
-        <span class="row-value">Settings → Delete Account</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Push Notifications</span>
-        <span class="row-value">iOS Settings → Notifications</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Analytics Opt-Out</span>
-        <span class="row-value">iOS Settings → Privacy → Tracking</span>
-      </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 Sajid Khokhar. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#" data-link-type="privacy">Privacy Policy</a>
+      <span>&middot;</span>
+      <a href="#" data-link-type="terms">Terms of Use</a>
+      <span>&middot;</span>
+      <a href="mailto:support.sajidapps@gmail.com">Contact</a>
     </div>
-    <div class="group-note">Deleting your account permanently erases all locally stored data including AI chat history. This action cannot be undone.</div>
-  </div>
+  </footer>
 
-  <!-- 6. Children's Privacy -->
-  <div class="group">
-    <div class="group-label">Children's Privacy</div>
-    <div class="text-card">
-      Axio Money is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us at <a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a> and we will promptly delete it.
+  <!-- Mobile Floating Drawer Navigation Button -->
+  <button id="mobile-nav-fab" class="mobile-nav-fab" title="Table of Contents">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
+  <!-- Mobile Drawer Overlay & Content -->
+  <div id="drawer-overlay" class="mobile-drawer-overlay"></div>
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Table of Contents</span>
+      <button id="drawer-close" class="mobile-drawer-close" title="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
     </div>
+    <ul class="toc-list">
+      <li class="drawer-toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
+      <li class="drawer-toc-item" data-target="collect"><a href="#collect">1. Information We Collect</a></li>
+      <li class="drawer-toc-item" data-target="device"><a href="#device">2. Data on Your Device</a></li>
+      <li class="drawer-toc-item" data-target="ai"><a href="#ai">3. AI Features</a></li>
+      <li class="drawer-toc-item" data-target="third-party"><a href="#third-party">4. Third-Party Services</a></li>
+      <li class="drawer-toc-item" data-target="controls"><a href="#controls">5. Your Controls</a></li>
+      <li class="drawer-toc-item" data-target="children"><a href="#children">6. Children's Privacy</a></li>
+      <li class="drawer-toc-item" data-target="retention"><a href="#retention">7. Data Retention</a></li>
+      <li class="drawer-toc-item" data-target="changes"><a href="#changes">8. Policy Changes</a></li>
+      <li class="drawer-toc-item" data-target="contact"><a href="#contact">9. Contact</a></li>
+    </ul>
   </div>
 
-  <!-- 7. Data Retention -->
-  <div class="group">
-    <div class="group-label">Data Retention</div>
-    <div class="card">
-      <div class="row">
-        <span class="row-label">Your local data</span>
-        <span class="row-value">Until deleted or app uninstalled</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Firebase Analytics</span>
-        <span class="row-value">Up to 2 months</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Firebase Crashlytics</span>
-        <span class="row-value">Up to 90 days</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- 8. Changes -->
-  <div class="group">
-    <div class="group-label">Changes to This Policy</div>
-    <div class="text-card">
-      We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. For significant changes, we will notify you via in-app notices or App Store update notes. Continued use of the app after changes constitutes your acceptance of the updated policy.
-    </div>
-  </div>
-
-  <!-- 9. Contact -->
-  <div class="group">
-    <div class="group-label">Contact</div>
-    <div class="card">
-      <div class="row">
-        <span class="row-label">Developer</span>
-        <span class="row-value">Sajid Khokhar</span>
-      </div>
-      <div class="row">
-        <span class="row-label">Email</span>
-        <span class="row-value"><a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a></span>
-      </div>
-      <div class="row">
-        <span class="row-label">Response time</span>
-        <span class="row-value">Within 30 days</span>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<footer>
-  <p>© 2026 Sajid Khokhar. All rights reserved.</p>
-  <p><a href="index.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a> &nbsp;·&nbsp; <a href="mailto:support.sajidapps@gmail.com">Contact</a></p>
-</footer>
-
+  <script src="script.js"></script>
 </body>
+
 </html>
