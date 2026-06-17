@@ -68,48 +68,43 @@ function initTheme() {
   const themeToggleBtn = document.getElementById('theme-toggle');
   if (!themeToggleBtn) return;
 
+  // Inject knob element into the button
+  const knob = document.createElement('span');
+  knob.className = 'theme-toggle-knob';
+  themeToggleBtn.appendChild(knob);
+
   const getSavedTheme = () => localStorage.getItem('theme');
   const getSystemTheme = () => window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   
   // Set initial theme
   const initialTheme = getSavedTheme() || getSystemTheme();
-  setTheme(initialTheme);
+  setTheme(initialTheme, false); // false = no transition on first load
 
   // Click listener
   themeToggleBtn.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
     const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
-    setTheme(nextTheme);
+    setTheme(nextTheme, true);
   });
 
-  function setTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
-    
-    // Update button icons
-    if (theme === 'light') {
-      themeToggleBtn.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      `;
-      themeToggleBtn.title = "Switch to Dark Mode";
+  function setTheme(theme, animate) {
+    if (!animate) {
+      // Suppress transitions on initial load to avoid flash
+      document.documentElement.style.transition = 'none';
+      document.documentElement.setAttribute('data-theme', theme);
+      // Force reflow then re-enable transitions
+      document.documentElement.offsetHeight; // eslint-disable-line no-unused-expressions
+      document.documentElement.style.transition = '';
     } else {
-      themeToggleBtn.innerHTML = `
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-      `;
-      themeToggleBtn.title = "Switch to Light Mode";
+      document.documentElement.setAttribute('data-theme', theme);
     }
+
+    localStorage.setItem('theme', theme);
+
+    // Update knob emoji: moon for dark, sun for light
+    knob.textContent = theme === 'light' ? '☀️' : '🌙';
+    themeToggleBtn.setAttribute('aria-label', theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode');
+    themeToggleBtn.title = theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode';
   }
 }
 
