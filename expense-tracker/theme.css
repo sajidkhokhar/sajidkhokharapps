@@ -164,6 +164,14 @@ header.app-header .brand-logo {
   box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.3);
 }
 
+header.app-header .brand-logo-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(var(--accent-rgb), 0.2);
+}
+
 header.app-header .brand-name {
   font-family: var(--font-title);
   font-weight: 700;
