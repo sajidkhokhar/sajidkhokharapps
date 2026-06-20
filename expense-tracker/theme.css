@@ -172,12 +172,11 @@ header.app-header {
   -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--card-border);
   padding: 16px 24px;
-  /* iOS app-shell spacing: clears the status bar / notch, then adds 80px
-     of extra clearance above the brand name + theme toggle, so they sit
-     well clear of the native status bar/notch area. env() resolves to
-     0px on non-iOS/older browsers, so this is a no-op there and the
-     80px alone still applies. */
-  padding-top: calc(env(safe-area-inset-top, 0px) + 80px);
+  /* iOS app-shell spacing: clears the status bar / notch, then adds 24px
+     of extra clearance above the brand name + theme toggle. env() resolves
+     to 0px on non-iOS/older browsers, so this is a no-op there and the
+     24px alone still applies. */
+  padding-top: calc(env(safe-area-inset-top, 0px) + 24px);
   transition: background 0.3s, border 0.3s;
 }
 
@@ -934,7 +933,7 @@ footer.app-footer a:hover {
 @media (max-width: 600px) {
   header.app-header {
     padding: 12px 16px;
-    padding-top: calc(env(safe-area-inset-top, 0px) + 80px);
+    padding-top: calc(env(safe-area-inset-top, 0px) + 24px);
   }
   
   .main-layout {
