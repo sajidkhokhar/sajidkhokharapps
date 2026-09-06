@@ -33,7 +33,7 @@
     <div class="hero-card">
       <div class="app-subtitle">SmartPet: Pet Care Tracker</div>
       <h1>Privacy Policy</h1>
-      <div class="update-date">Last updated August 29, 2026</div>
+      <div class="update-date">Last updated September 6, 2026</div>
       <div>
         <a href="#" class="doc-link" data-link-type="terms" style="margin-top: 14px; font-weight: 600; color: var(--accent); text-decoration: none;">Terms of Use &rarr;</a>
       </div>
@@ -51,6 +51,7 @@
             <li class="toc-item" data-target="medical-disclaimer"><a href="#medical-disclaimer">1. Medical Disclaimer</a></li>
             <li class="toc-item" data-target="collect"><a href="#collect">2. Information We Collect</a></li>
             <li class="toc-item" data-target="device"><a href="#device">3. Data on Your Device</a></li>
+            <li class="toc-item" data-target="cloud-backup"><a href="#cloud-backup">3b. Premium Cloud Backup</a></li>
             <li class="toc-item" data-target="third-party"><a href="#third-party">4. Third-Party Services</a></li>
             <li class="toc-item" data-target="controls"><a href="#controls">5. Your Controls</a></li>
             <li class="toc-item" data-target="children"><a href="#children">6. Children's Privacy</a></li>
@@ -95,7 +96,7 @@
         <div class="group" id="intro">
           <div class="group-label">Introduction</div>
           <div class="glass-card card-intro-text">
-            SmartPet does not collect, transmit, or store your pets' health data on any server. Everything you enter — pet profiles, vaccinations, medications, and every other record — stays on your device only. We currently offer no cloud backup or sync of any kind. This policy explains what limited data we do collect and why.
+            SmartPet does not collect, transmit, or store your pets' health data on our own servers. By default, everything you enter — pet profiles, vaccinations, medications, and every other record — stays on your device only. Premium subscribers can optionally enable cloud backup, which securely syncs this data to their own private iCloud account via Apple's CloudKit. This policy explains what limited data we do collect and why.
           </div>
         </div>
 
@@ -143,7 +144,7 @@
           <div class="group-label">3. Data Stored on Your Device Only</div>
           <div class="glass-card">
             <div class="row-block">
-              The following data is entered by you and stored locally on your device only, using Apple's on-device SwiftData storage. We have no access to it, and it is never uploaded, backed up, or synced anywhere — <strong>SmartPet currently does not offer cloud backup.</strong> If you delete the app or lose your device without exporting your records first, this data cannot be recovered.
+              The following data is entered by you and stored locally on your device only, using Apple's on-device SwiftData storage. We have no access to it, and by default it is never uploaded or synced anywhere. If you delete the app or lose your device without exporting your records first, this data cannot be recovered — <strong>unless you are a premium subscriber with cloud backup enabled (see below).</strong>
             </div>
             <div class="row-block">Pet profiles, including name, species, breed, birthday, gender, weight, and photos.</div>
             <div class="row-block">Vaccination, medication, weight, and vet visit records.</div>
@@ -151,7 +152,27 @@
             <div class="row-block">Activity logs, food reminders, and emergency contacts.</div>
             <div class="row-block">App preferences including appearance, units, and notification settings.</div>
           </div>
-          <div class="group-note">None of this data leaves your device unless you explicitly export it yourself using the in-app PDF export feature.</div>
+          <div class="group-note">None of this data leaves your device unless you explicitly export it yourself using the in-app PDF export feature, or you are a premium subscriber with cloud backup enabled.</div>
+        </div>
+
+        <!-- 3b. Premium Cloud Backup -->
+        <div class="group" id="cloud-backup">
+          <div class="group-label">3b. Premium Cloud Backup</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Opt-in, premium only.</strong> Cloud backup is an optional feature available exclusively to premium subscribers. It is off by default and must be turned on from Settings.
+            </div>
+            <div class="row-block">
+              <strong>Your private iCloud account.</strong> When enabled, your pet records are synced to your own private iCloud account using Apple's CloudKit private database. This data is encrypted in transit and at rest by Apple, is tied to your Apple ID, and is not accessible to us, Sajid Khokhar, or any other third party.
+            </div>
+            <div class="row-block">
+              <strong>Multi-device sync.</strong> Cloud backup also lets your data sync automatically across your own devices signed in with the same Apple ID.
+            </div>
+            <div class="row-block">
+              <strong>Turning it off.</strong> If you disable cloud backup or cancel your premium subscription, your existing iCloud backup data is not automatically deleted by us — it remains in your iCloud account subject to Apple's iCloud storage and retention terms, and you can remove it at any time from your device's iCloud settings.
+            </div>
+          </div>
+          <div class="group-note">Because cloud backup uses your own private iCloud account, Apple's Privacy Policy governs how that data is stored and protected once synced.</div>
         </div>
 
         <!-- 4. Third-Party Services -->
@@ -166,11 +187,11 @@
               Used for anonymized analytics and crash reporting only.
             </div>
             <div class="row">
-              <span class="row-label">Apple — StoreKit</span>
+              <span class="row-label">Apple — StoreKit &amp; iCloud</span>
               <span class="row-value"><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></span>
             </div>
             <div class="row-block">
-              Subscriptions and purchases are processed entirely by Apple via StoreKit. We do not use iCloud or any other cloud service to store or sync your data.
+              Subscriptions and purchases are processed entirely by Apple via StoreKit. If you are a premium subscriber and enable cloud backup, your pet records are synced to your private iCloud account via Apple's CloudKit — we do not use any other cloud service to store or sync your data.
             </div>
           </div>
           <div class="group-note">SmartPet is ad-free. We do not sell, share, or rent your personal information to advertisers or any third party.</div>
@@ -189,6 +210,10 @@
               <span class="row-value">PDF, from Settings</span>
             </div>
             <div class="row">
+              <span class="row-label">Cloud Backup (Premium)</span>
+              <span class="row-value">Settings &rarr; Cloud Backup</span>
+            </div>
+            <div class="row">
               <span class="row-label">Delete Account Data</span>
               <span class="row-value">Settings &rarr; Delete Account Data</span>
             </div>
@@ -201,7 +226,7 @@
               <span class="row-value">iOS Settings &rarr; Privacy &rarr; Tracking</span>
             </div>
           </div>
-          <div class="group-note">Deleting your account data permanently erases every pet profile, record, document, and setting stored in SmartPet on this device. Since we keep no backup or copy of it anywhere, this action cannot be undone — export anything you want to keep first.</div>
+          <div class="group-note">Deleting your account data permanently erases every pet profile, record, document, and setting stored in SmartPet on this device. If you do not have cloud backup enabled, we keep no copy anywhere and this action cannot be undone — export anything you want to keep first. If cloud backup is enabled, a copy remains in your private iCloud account until you remove it separately.</div>
         </div>
 
         <!-- 6. Children's Privacy -->
@@ -228,8 +253,12 @@
               <span class="row-label">Firebase Crashlytics</span>
               <span class="row-value">Up to 90 days</span>
             </div>
+            <div class="row">
+              <span class="row-label">iCloud backup (premium)</span>
+              <span class="row-value">Until you remove it or disable backup</span>
+            </div>
           </div>
-          <div class="group-note">Uninstalling SmartPet, or deleting a pet or your account data from within the app, permanently and immediately erases the corresponding local data — there is no server-side copy to recover it from.</div>
+          <div class="group-note">Uninstalling SmartPet, or deleting a pet or your account data from within the app, permanently and immediately erases the corresponding local data. If cloud backup was not enabled, there is no copy to recover it from; if it was enabled, a copy persists in your private iCloud account until you delete it there.</div>
         </div>
 
         <!-- 8. Changes to This Policy -->
@@ -313,6 +342,7 @@
       <li class="drawer-toc-item" data-target="medical-disclaimer"><a href="#medical-disclaimer">1. Medical Disclaimer</a></li>
       <li class="drawer-toc-item" data-target="collect"><a href="#collect">2. Information We Collect</a></li>
       <li class="drawer-toc-item" data-target="device"><a href="#device">3. Data on Your Device</a></li>
+      <li class="drawer-toc-item" data-target="cloud-backup"><a href="#cloud-backup">3b. Premium Cloud Backup</a></li>
       <li class="drawer-toc-item" data-target="third-party"><a href="#third-party">4. Third-Party Services</a></li>
       <li class="drawer-toc-item" data-target="controls"><a href="#controls">5. Your Controls</a></li>
       <li class="drawer-toc-item" data-target="children"><a href="#children">6. Children's Privacy</a></li>
