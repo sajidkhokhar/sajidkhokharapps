@@ -4,3 +4,7 @@
 header{padding-top:24px}
 html{scroll-padding-top:134px}.sidebar{top:134px}.content section{scroll-margin-top:134px}
 @media(max-width:620px){html{scroll-padding-top:169px}.content section{scroll-margin-top:169px}}
+
+/* Anchor the theme control to the brand row inside the padded header. */
+.header-inner{position:relative}
+@media(max-width:620px){.theme-toggle{top:12px}}
