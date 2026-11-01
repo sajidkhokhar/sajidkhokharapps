@@ -33,7 +33,7 @@
     <div class="hero-card">
       <div class="app-subtitle">Axio Money: Expense Tracker</div>
       <h1>Terms of Use</h1>
-      <div class="update-date">Last updated June 17, 2026</div>
+      <div class="update-date">Last updated November 1, 2026</div>
       <div>
         <a href="#" class="doc-link" data-link-type="privacy" style="margin-top: 14px; font-weight: 600; color: var(--accent); text-decoration: none;">Privacy Policy &rarr;</a>
       </div>
@@ -51,14 +51,15 @@
             <li class="toc-item" data-target="license"><a href="#license">1. License</a></li>
             <li class="toc-item" data-target="purchases"><a href="#purchases">2. Purchases &amp; Subscriptions</a></li>
             <li class="toc-item" data-target="data"><a href="#data">3. Your Data</a></li>
-            <li class="toc-item" data-target="ai"><a href="#ai">4. AI Features</a></li>
-            <li class="toc-item" data-target="disclaimers"><a href="#disclaimers">5. Disclaimers &amp; Liability</a></li>
-            <li class="toc-item" data-target="property"><a href="#property">6. Intellectual Property</a></li>
-            <li class="toc-item" data-target="updates"><a href="#updates">7. Updates &amp; Availability</a></li>
-            <li class="toc-item" data-target="termination"><a href="#termination">8. Termination</a></li>
-            <li class="toc-item" data-target="governing-law"><a href="#governing-law">9. Governing Law</a></li>
-            <li class="toc-item" data-target="changes"><a href="#changes">10. Changes to Terms</a></li>
-            <li class="toc-item" data-target="contact"><a href="#contact">11. Contact</a></li>
+            <li class="toc-item" data-target="permissions"><a href="#permissions">4. App Permissions</a></li>
+            <li class="toc-item" data-target="ai"><a href="#ai">5. AI Features</a></li>
+            <li class="toc-item" data-target="disclaimers"><a href="#disclaimers">6. Disclaimers &amp; Liability</a></li>
+            <li class="toc-item" data-target="property"><a href="#property">7. Intellectual Property</a></li>
+            <li class="toc-item" data-target="updates"><a href="#updates">8. Updates &amp; Availability</a></li>
+            <li class="toc-item" data-target="termination"><a href="#termination">9. Termination</a></li>
+            <li class="toc-item" data-target="governing-law"><a href="#governing-law">10. Governing Law</a></li>
+            <li class="toc-item" data-target="changes"><a href="#changes">11. Changes to Terms</a></li>
+            <li class="toc-item" data-target="contact"><a href="#contact">12. Contact</a></li>
           </ul>
         </div>
       </aside>
@@ -118,10 +119,10 @@
           <div class="group-label">2. In-App Purchases &amp; Subscriptions</div>
           <div class="glass-card">
             <div class="row-block">
-              <strong>Pricing.</strong> Premium features are available via monthly or yearly auto-renewing subscriptions, or a one-time lifetime purchase. Prices are shown in the app and processed entirely by Apple. All purchases and subscriptions are governed by the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard Terms of Use (EULA)</a>.
+              <strong>Pricing.</strong> Premium features are available via weekly, monthly or yearly auto-renewing subscriptions, or a one-time lifetime purchase. Prices are shown in the app and processed entirely by Apple. All purchases and subscriptions are governed by the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard Terms of Use (EULA)</a>.
             </div>
             <div class="row-block">
-              <strong>Auto-renewal.</strong> Monthly and yearly subscriptions renew automatically unless cancelled at least 24 hours before the end of the current billing period. Your Apple ID is charged for renewal within 24 hours of the period end. The lifetime purchase is a one-time charge with no renewal.
+              <strong>Auto-renewal.</strong> Weekly, monthly and yearly subscriptions renew automatically unless cancelled at least 24 hours before the end of the current billing period. Your Apple ID is charged for renewal within 24 hours of the period end. The lifetime purchase is a one-time charge with no renewal.
             </div>
             <div class="row-block">
               <strong>Managing subscriptions.</strong> Cancel or manage your subscription at any time via Apple ID Account Settings &rarr; Subscriptions. You retain access until the end of the current billing period.
@@ -140,20 +141,67 @@
               You retain full ownership of all data you enter into the app. We claim no rights over your personal or financial data.
             </div>
             <div class="row-block">
+              <strong>Stored on your device.</strong> Your transactions, accounts, budgets, goals and preferences are stored on your device. Axio Money has no user account and no cloud sync. You can export your data or erase it at any time from Settings.
+            </div>
+            <div class="row-block">
               <strong>Financial disclaimer.</strong> Axio Money is a personal finance tracking tool only. It does not provide financial, tax, legal, or investment advice. Always verify important financial decisions with a qualified professional.
             </div>
           </div>
         </div>
 
-        <!-- 4. AI Features -->
-        <div class="group" id="ai">
-          <div class="group-label">4. AI Features</div>
+        <!-- 4. Permissions -->
+        <div class="group" id="permissions">
+          <div class="group-label">4. App Permissions</div>
           <div class="glass-card">
             <div class="row-block">
-              <strong>On-device only.</strong> All AI features use Apple Foundation Models and run entirely on your device. Your data is never sent to external AI servers or third parties.
+              Axio Money asks for the following permissions only when you use the feature that needs them. Each is optional, and you can change any of them at any time in iOS Settings &rarr; Axio Money. If you decline a permission, only the related feature is unavailable.
+            </div>
+            <div class="row-block">
+              <strong>Notifications.</strong> Budget alerts when you approach or exceed a budget, and an optional daily reminder to log your expenses. These are scheduled on your device. The app also registers for Apple Push Notification service (delivered through Firebase Cloud Messaging) so we can send occasional announcements. Optional: change anytime in iOS Settings &rarr; Notifications.
+            </div>
+            <div class="row-block">
+              <strong>App Tracking Transparency.</strong> Asks whether Axio Money may use your device's advertising identifier for app-performance measurement through Firebase Analytics. Optional: if you decline, every feature works exactly the same. Axio Money shows no ads and does not sell or share your data for advertising.
+            </div>
+            <div class="row-block">
+              <strong>Camera.</strong> Used by Scan to read receipts, bills, salary slips and barcodes so the app can fill in an expense or income for you. Text is recognized on your device using Apple's Vision framework. Photos are not uploaded and are not saved by the app; only the transaction you keep is stored.
+            </div>
+            <div class="row-block">
+              <strong>Photos (system photo picker).</strong> Lets you pick an existing receipt or bank/UPI screenshot for Scan. The app can only read the specific images you choose; it never receives access to your photo library.
+            </div>
+            <div class="row-block">
+              <strong>Microphone.</strong> Used by Voice to listen while you say an expense or income, such as &ldquo;spent 450 on groceries.&rdquo; Audio is processed only while recording and is not stored by Axio Money.
+            </div>
+            <div class="row-block">
+              <strong>Speech Recognition.</strong> Converts what you say into text for Voice. Where your language and device support it, recognition runs entirely on your device; otherwise iOS may process the audio using Apple's speech service, which is governed by Apple's privacy policy.
+            </div>
+            <div class="row-block">
+              <strong>Face ID.</strong> Used to unlock accounts you have marked as Locked, keeping their transactions private. Biometric data stays inside Apple's Secure Enclave and is never available to Axio Money.
+            </div>
+            <div class="row-block">
+              <strong>Siri, Shortcuts &amp; Back Tap.</strong> App Intents let you add an expense or income from Shortcuts, Siri, the Action Button or Back Tap without opening the app. They run on your device and use no extra permission prompt.
+            </div>
+            <div class="row-block">
+              <strong>Widgets.</strong> Home Screen and Lock Screen widgets read a summary of your data from storage shared with the app on your device. No permission prompt and nothing is sent anywhere.
+            </div>
+            <div class="row-block">
+              <strong>Apple Intelligence (optional).</strong> Axie AI, spending insights and Scan/Voice understanding use Apple Foundation Models, an optional iOS feature on supported devices. It is not a permission; it runs on your device.
+            </div>
+          </div>
+          <div class="group-note">Axio Money does not request access to your location, contacts, calendars, health data, Bluetooth, or local network.</div>
+        </div>
+
+        <!-- 5. AI Features -->
+        <div class="group" id="ai">
+          <div class="group-label">5. AI Features</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>On-device only.</strong> All AI features, including Axie AI, spending insights, and Scan and Voice entry, use Apple Foundation Models and run entirely on your device. Your data is never sent to external AI servers or third parties.
             </div>
             <div class="row-block">
               <strong>Device compatibility.</strong> AI features require a compatible Apple device that supports Apple Foundation Models. They are unavailable on unsupported devices.
+            </div>
+            <div class="row-block">
+              <strong>Scan and Voice (Pro).</strong> Scan and Voice read receipts, bills, screenshots or your spoken words and create an expense or income entry for you. They are premium features and require a device that supports Apple Foundation Models. The result is an automatic best guess that may be wrong, so please check the amount, date and category (you can Undo or Edit right after it is saved). You are responsible for the accuracy of the records in your app.
             </div>
             <div class="row-block">
               <strong>Not financial advice.</strong> AI-generated insights and suggestions are for informational purposes only and do not constitute financial advice. We are not liable for decisions made based on AI output.
@@ -163,7 +211,7 @@
 
         <!-- 5. Disclaimers & Liability -->
         <div class="group" id="disclaimers">
-          <div class="group-label">5. Disclaimers &amp; Liability</div>
+          <div class="group-label">6. Disclaimers &amp; Liability</div>
           <div class="glass-card">
             <div class="row-block">
               <strong>Provided "as is".</strong> The app is provided without warranties of any kind, including fitness for a particular purpose, uninterrupted operation, or accuracy of any information.
@@ -176,7 +224,7 @@
 
         <!-- 6. Intellectual Property -->
         <div class="group" id="property">
-          <div class="group-label">6. Intellectual Property</div>
+          <div class="group-label">7. Intellectual Property</div>
           <div class="glass-card card-intro-text">
             All intellectual property in Axio Money — including design, code, graphics, and content — is owned by Sajid Khokhar. Nothing in these Terms grants you any right to use any trademarks, logos, or brand names without prior written permission.
           </div>
@@ -184,7 +232,7 @@
 
         <!-- 7. Updates & Availability -->
         <div class="group" id="updates">
-          <div class="group-label">7. Updates &amp; Availability</div>
+          <div class="group-label">8. Updates &amp; Availability</div>
           <div class="glass-card card-intro-text">
             We may update, modify, or discontinue the app or any feature at any time. We are not liable for any period of unavailability. Subscribers will be notified of any pricing changes in advance.
           </div>
@@ -192,7 +240,7 @@
 
         <!-- 8. Termination -->
         <div class="group" id="termination">
-          <div class="group-label">8. Termination</div>
+          <div class="group-label">9. Termination</div>
           <div class="glass-card card-intro-text">
             These Terms remain in effect until terminated. Your right to use the app terminates automatically if you violate any provision. We may suspend or terminate access for conduct that violates these Terms or is harmful to users or third parties.
           </div>
@@ -200,7 +248,7 @@
 
         <!-- 9. Governing Law -->
         <div class="group" id="governing-law">
-          <div class="group-label">9. Governing Law &amp; Jurisdiction</div>
+          <div class="group-label">10. Governing Law &amp; Jurisdiction</div>
           <div class="glass-card">
             <div class="row">
               <span class="row-label">Primary Jurisdiction</span>
@@ -217,7 +265,7 @@
 
         <!-- 10. Changes to These Terms -->
         <div class="group" id="changes">
-          <div class="group-label">10. Changes to These Terms</div>
+          <div class="group-label">11. Changes to These Terms</div>
           <div class="glass-card card-intro-text">
             We may update these Terms at any time. We will notify you of material changes via in-app notices or App Store update notes. Continued use of the app after changes constitutes your acceptance of the updated Terms.
           </div>
@@ -225,7 +273,7 @@
 
         <!-- 11. Contact -->
         <div class="group" id="contact">
-          <div class="group-label">11. Contact</div>
+          <div class="group-label">12. Contact</div>
           <div class="glass-card">
             <div class="row">
               <span class="row-label">Developer</span>
@@ -288,14 +336,15 @@
       <li class="drawer-toc-item" data-target="license"><a href="#license">1. License</a></li>
       <li class="drawer-toc-item" data-target="purchases"><a href="#purchases">2. Purchases &amp; Subscriptions</a></li>
       <li class="drawer-toc-item" data-target="data"><a href="#data">3. Your Data</a></li>
-      <li class="drawer-toc-item" data-target="ai"><a href="#ai">4. AI Features</a></li>
-      <li class="drawer-toc-item" data-target="disclaimers"><a href="#disclaimers">5. Disclaimers &amp; Liability</a></li>
-      <li class="drawer-toc-item" data-target="property"><a href="#property">6. Intellectual Property</a></li>
-      <li class="drawer-toc-item" data-target="updates"><a href="#updates">7. Updates &amp; Availability</a></li>
-      <li class="drawer-toc-item" data-target="termination"><a href="#termination">8. Termination</a></li>
-      <li class="drawer-toc-item" data-target="governing-law"><a href="#governing-law">9. Governing Law</a></li>
-      <li class="drawer-toc-item" data-target="changes"><a href="#changes">10. Changes to Terms</a></li>
-      <li class="drawer-toc-item" data-target="contact"><a href="#contact">11. Contact</a></li>
+      <li class="drawer-toc-item" data-target="permissions"><a href="#permissions">4. App Permissions</a></li>
+      <li class="drawer-toc-item" data-target="ai"><a href="#ai">5. AI Features</a></li>
+      <li class="drawer-toc-item" data-target="disclaimers"><a href="#disclaimers">6. Disclaimers &amp; Liability</a></li>
+      <li class="drawer-toc-item" data-target="property"><a href="#property">7. Intellectual Property</a></li>
+      <li class="drawer-toc-item" data-target="updates"><a href="#updates">8. Updates &amp; Availability</a></li>
+      <li class="drawer-toc-item" data-target="termination"><a href="#termination">9. Termination</a></li>
+      <li class="drawer-toc-item" data-target="governing-law"><a href="#governing-law">10. Governing Law</a></li>
+      <li class="drawer-toc-item" data-target="changes"><a href="#changes">11. Changes to Terms</a></li>
+      <li class="drawer-toc-item" data-target="contact"><a href="#contact">12. Contact</a></li>
     </ul>
   </div>
 

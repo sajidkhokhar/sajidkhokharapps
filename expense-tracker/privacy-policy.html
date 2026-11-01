@@ -33,7 +33,7 @@
     <div class="hero-card">
       <div class="app-subtitle">Axio Money: Expense Tracker</div>
       <h1>Privacy Policy</h1>
-      <div class="update-date">Last updated June 17, 2026</div>
+      <div class="update-date">Last updated November 1, 2026</div>
       <div>
         <a href="#" class="doc-link" data-link-type="terms" style="margin-top: 14px; font-weight: 600; color: var(--accent); text-decoration: none;">Terms of Use &rarr;</a>
       </div>
@@ -50,14 +50,15 @@
             <li class="toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
             <li class="toc-item" data-target="collect"><a href="#collect">1. Information We Collect</a></li>
             <li class="toc-item" data-target="device"><a href="#device">2. Data on Your Device</a></li>
-            <li class="toc-item" data-target="ai"><a href="#ai">3. AI Features</a></li>
-            <li class="toc-item" data-target="third-party"><a href="#third-party">4. Third-Party Services</a></li>
-            <li class="toc-item" data-target="controls"><a href="#controls">5. Your Controls</a></li>
-            <li class="toc-item" data-target="children"><a href="#children">6. Children's Privacy</a></li>
-            <li class="toc-item" data-target="retention"><a href="#retention">7. Data Retention</a></li>
-            <li class="toc-item" data-target="changes"><a href="#changes">8. Policy Changes</a></li>
-            <li class="toc-item" data-target="contact"><a href="#contact">9. Contact</a></li>
-            <li class="toc-item" data-target="international-privacy"><a href="#international-privacy">10. GDPR &amp; CCPA Compliance</a></li>
+            <li class="toc-item" data-target="ai"><a href="#ai">3. AI, Scan &amp; Voice</a></li>
+            <li class="toc-item" data-target="permissions"><a href="#permissions">4. Permissions We Request</a></li>
+            <li class="toc-item" data-target="third-party"><a href="#third-party">5. Third-Party Services</a></li>
+            <li class="toc-item" data-target="controls"><a href="#controls">6. Your Controls</a></li>
+            <li class="toc-item" data-target="children"><a href="#children">7. Children's Privacy</a></li>
+            <li class="toc-item" data-target="retention"><a href="#retention">8. Data Retention</a></li>
+            <li class="toc-item" data-target="changes"><a href="#changes">9. Policy Changes</a></li>
+            <li class="toc-item" data-target="contact"><a href="#contact">10. Contact</a></li>
+            <li class="toc-item" data-target="international-privacy"><a href="#international-privacy">11. GDPR &amp; CCPA Compliance</a></li>
           </ul>
         </div>
       </aside>
@@ -95,7 +96,7 @@
         <div class="group" id="intro">
           <div class="group-label">Introduction</div>
           <div class="glass-card card-intro-text">
-            Axio Money does not collect, transmit, or store your personal financial data on any server. Everything you enter stays on your device. This policy explains what limited data we do collect and why.
+            Axio Money does not collect, transmit, or store your personal financial data on any server. There is no account to create and no cloud sync: everything you enter, scan or say stays on your device. This policy explains the limited technical data we do collect, the permissions the app asks for, and why.
           </div>
         </div>
 
@@ -104,10 +105,16 @@
           <div class="group-label">1. Information We Collect</div>
           <div class="glass-card">
             <div class="row-block">
-              <strong>Usage analytics.</strong> We collect anonymized data about app usage — such as app opens, device type, OS version, and locale — via Firebase Analytics. This data is aggregated and cannot be used to identify you.
+              <strong>Usage analytics.</strong> We collect anonymized data about how the app is used &mdash; such as app opens, screens and features used, device type, OS version, and locale &mdash; via Firebase Analytics. Event details never include your transactions, amounts, titles, notes, or scanned or spoken content. Firebase assigns an app-instance identifier; the advertising identifier is only used if you allow tracking when asked.
             </div>
             <div class="row-block">
-              <strong>Crash reports.</strong> If the app crashes, an anonymized report is sent on the next launch via Firebase Crashlytics to help us diagnose and fix issues. Crash reports do not contain any of your financial data.
+              <strong>Crash reports.</strong> If the app crashes, an anonymized report is sent via Firebase Crashlytics to help us diagnose and fix issues. Crash reports do not contain your financial data.
+            </div>
+            <div class="row-block">
+              <strong>Push notification token.</strong> If you allow notifications, Apple and Firebase Cloud Messaging provide a device token so notifications can be delivered. It is not linked to your financial data.
+            </div>
+            <div class="row-block">
+              <strong>Anonymous authentication &amp; remote configuration.</strong> The app signs in to Firebase anonymously (no name, email, or password) and reads app settings, such as the free usage limit and update notices, from Firebase. This sends none of your financial data.
             </div>
             <div class="row-block">
               <strong>Subscription status.</strong> Purchase receipts are validated with Apple via StoreKit to manage your premium access. We do not store payment information.
@@ -116,7 +123,7 @@
               <strong>Support email.</strong> If you contact us for support, we receive your email address solely to respond to your inquiry.
             </div>
           </div>
-          <div class="group-note">We do not collect names, financial data, location, contacts, or any personally identifiable information during normal app use.</div>
+          <div class="group-note">We do not collect names, financial data, location, contacts, photos, audio, or any personally identifiable information during normal app use.</div>
         </div>
 
         <!-- 2. Data Stored on Your Device Only -->
@@ -127,7 +134,8 @@
               The following data is entered by you and stored locally on your device only. We have no access to it.
             </div>
             <div class="row-block">Expenses, income, categories, and notes.</div>
-            <div class="row-block">Financial goals and savings objectives.</div>
+            <div class="row-block">Accounts and wallets, budgets, tags, financial goals and savings objectives.</div>
+            <div class="row-block">Results of Scan and Voice entries. Photos you scan and audio you record are processed on the spot and are not saved or uploaded by the app.</div>
             <div class="row-block">AI chat history and generated insights.</div>
             <div class="row-block">Profile preferences including currency, theme, avatar, and notification settings.</div>
           </div>
@@ -136,13 +144,16 @@
 
         <!-- 3. AI Features -->
         <div class="group" id="ai">
-          <div class="group-label">3. AI Features</div>
+          <div class="group-label">3. AI, Scan &amp; Voice</div>
           <div class="glass-card">
             <div class="row-block">
-              <strong>On-device only.</strong> All AI features — including the financial assistant, spending insights, and savings tips — use Apple Foundation Models and run entirely on your device. Your financial data is never sent to external AI servers or third parties.
+              <strong>On-device only.</strong> All AI features &mdash; including Axie AI, spending insights, savings tips, and understanding Scan and Voice entries &mdash; use Apple Foundation Models and run entirely on your device. Receipt and screenshot text is read on your device with Apple's Vision framework. Your financial data is never sent to external AI servers or third parties.
             </div>
             <div class="row-block">
               <strong>Device requirement.</strong> AI features require a compatible Apple device that supports Apple Foundation Models. On unsupported devices, these features are simply unavailable and no data is collected.
+            </div>
+            <div class="row-block">
+              <strong>Voice.</strong> Speech recognition runs on your device where your language supports it. Otherwise iOS may use Apple's speech service to process the audio, under Apple's privacy policy. Axio Money does not keep the audio.
             </div>
             <div class="row-block">
               <strong>Chat history.</strong> AI conversation history is stored locally on your device and is permanently deleted when you use Delete Account in Settings.
@@ -150,31 +161,72 @@
           </div>
         </div>
 
-        <!-- 4. Third-Party Services -->
+        <!-- 4. Permissions -->
+        <div class="group" id="permissions">
+          <div class="group-label">4. Permissions We Request</div>
+          <div class="glass-card">
+            <div class="row-block">
+              Axio Money asks for a permission only when you use the feature that needs it. Every permission is optional and can be changed in iOS Settings &rarr; Axio Money. Declining affects only the related feature.
+            </div>
+            <div class="row-block">
+              <strong>Notifications.</strong> Budget alerts when you approach or exceed a budget, and an optional daily reminder to log your expenses. These are scheduled on your device. The app also registers for Apple Push Notification service (delivered through Firebase Cloud Messaging) so we can send occasional announcements. Optional: change anytime in iOS Settings &rarr; Notifications.
+            </div>
+            <div class="row-block">
+              <strong>App Tracking Transparency.</strong> Asks whether Axio Money may use your device's advertising identifier for app-performance measurement through Firebase Analytics. Optional: if you decline, every feature works exactly the same. Axio Money shows no ads and does not sell or share your data for advertising.
+            </div>
+            <div class="row-block">
+              <strong>Camera.</strong> Used by Scan to read receipts, bills, salary slips and barcodes so the app can fill in an expense or income for you. Text is recognized on your device using Apple's Vision framework. Photos are not uploaded and are not saved by the app; only the transaction you keep is stored.
+            </div>
+            <div class="row-block">
+              <strong>Photos (system photo picker).</strong> Lets you pick an existing receipt or bank/UPI screenshot for Scan. The app can only read the specific images you choose; it never receives access to your photo library.
+            </div>
+            <div class="row-block">
+              <strong>Microphone.</strong> Used by Voice to listen while you say an expense or income, such as &ldquo;spent 450 on groceries.&rdquo; Audio is processed only while recording and is not stored by Axio Money.
+            </div>
+            <div class="row-block">
+              <strong>Speech Recognition.</strong> Converts what you say into text for Voice. Where your language and device support it, recognition runs entirely on your device; otherwise iOS may process the audio using Apple's speech service, which is governed by Apple's privacy policy.
+            </div>
+            <div class="row-block">
+              <strong>Face ID.</strong> Used to unlock accounts you have marked as Locked, keeping their transactions private. Biometric data stays inside Apple's Secure Enclave and is never available to Axio Money.
+            </div>
+            <div class="row-block">
+              <strong>Siri, Shortcuts &amp; Back Tap.</strong> App Intents let you add an expense or income from Shortcuts, Siri, the Action Button or Back Tap without opening the app. They run on your device and use no extra permission prompt.
+            </div>
+            <div class="row-block">
+              <strong>Widgets.</strong> Home Screen and Lock Screen widgets read a summary of your data from storage shared with the app on your device. No permission prompt and nothing is sent anywhere.
+            </div>
+            <div class="row-block">
+              <strong>Apple Intelligence (optional).</strong> Axie AI, spending insights and Scan/Voice understanding use Apple Foundation Models, an optional iOS feature on supported devices. It is not a permission; it runs on your device.
+            </div>
+          </div>
+          <div class="group-note">Axio Money does not request access to your location, contacts, calendars, health data, Bluetooth, or local network.</div>
+        </div>
+
+        <!-- 5. Third-Party Services -->
         <div class="group" id="third-party">
-          <div class="group-label">4. Third-Party Services</div>
+          <div class="group-label">5. Third-Party Services</div>
           <div class="glass-card">
             <div class="row">
               <span class="row-label">Firebase — Google LLC</span>
               <span class="row-value"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
             </div>
             <div class="row-block">
-              Used for anonymized analytics, crash reporting, anonymous authentication, and remote configuration.
+              Firebase Analytics, Crashlytics, Authentication (anonymous), Firestore (read-only remote configuration), and Cloud Messaging are used for anonymized analytics, crash reporting, anonymous sign-in, app settings, and notifications.
             </div>
             <div class="row">
-              <span class="row-label">Apple — StoreKit &amp; iCloud</span>
+              <span class="row-label">Apple &mdash; StoreKit</span>
               <span class="row-value"><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></span>
             </div>
             <div class="row-block">
-              Subscriptions are processed by Apple via StoreKit. iCloud sync is available to premium users and governed by Apple's privacy policy.
+              Subscriptions are processed by Apple via StoreKit. Axio Money does not use iCloud or any other cloud sync for your data.
             </div>
           </div>
-          <div class="group-note">Axio Money is ad-free. We do not sell, share, or rent your personal information to advertisers or any third party.</div>
+          <div class="group-note">Axio Money is ad-free. We do not sell, share, or rent your personal information to advertisers or any third party. If you decline the tracking prompt, nothing about the app changes.</div>
         </div>
 
         <!-- 5. Your Controls -->
         <div class="group" id="controls">
-          <div class="group-label">5. Your Controls</div>
+          <div class="group-label">6. Your Controls</div>
           <div class="glass-card">
             <div class="row">
               <span class="row-label">Access &amp; Edit</span>
@@ -193,6 +245,10 @@
               <span class="row-value">iOS Settings &rarr; Notifications</span>
             </div>
             <div class="row">
+              <span class="row-label">Camera, Microphone, Speech, Face ID</span>
+              <span class="row-value">iOS Settings &rarr; Axio Money</span>
+            </div>
+            <div class="row">
               <span class="row-label">Analytics Opt-Out</span>
               <span class="row-value">iOS Settings &rarr; Privacy &rarr; Tracking</span>
             </div>
@@ -202,7 +258,7 @@
 
         <!-- 6. Children's Privacy -->
         <div class="group" id="children">
-          <div class="group-label">6. Children's Privacy</div>
+          <div class="group-label">7. Children's Privacy</div>
           <div class="glass-card card-intro-text">
             Axio Money is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us at <a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a> and we will promptly delete it.
           </div>
@@ -210,7 +266,7 @@
 
         <!-- 7. Data Retention -->
         <div class="group" id="retention">
-          <div class="group-label">7. Data Retention</div>
+          <div class="group-label">8. Data Retention</div>
           <div class="glass-card">
             <div class="row">
               <span class="row-label">Your local data</span>
@@ -229,7 +285,7 @@
 
         <!-- 8. Changes to This Policy -->
         <div class="group" id="changes">
-          <div class="group-label">8. Changes to This Policy</div>
+          <div class="group-label">9. Changes to This Policy</div>
           <div class="glass-card card-intro-text">
             We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date. For significant changes, we will notify you via in-app notices or App Store update notes. Continued use of the app after changes constitutes your acceptance of the updated policy.
           </div>
@@ -237,7 +293,7 @@
 
         <!-- 9. Contact -->
         <div class="group" id="contact">
-          <div class="group-label">9. Contact</div>
+          <div class="group-label">10. Contact</div>
           <div class="glass-card">
             <div class="row">
               <span class="row-label">Developer</span>
@@ -256,7 +312,7 @@
 
         <!-- 10. GDPR & CCPA Compliance -->
         <div class="group" id="international-privacy">
-          <div class="group-label">10. GDPR &amp; CCPA Compliance</div>
+          <div class="group-label">11. GDPR &amp; CCPA Compliance</div>
           <div class="glass-card card-intro-text">
             Axio Money is designed to comply with global privacy standards, including the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States. Since we do not collect, transmit, or sell your personal financial data to third parties, we natively respect your rights to data minimization, privacy, and data portability. You can access, edit, export, or delete your data directly inside the app settings at any time.
           </div>
@@ -307,14 +363,15 @@
       <li class="drawer-toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
       <li class="drawer-toc-item" data-target="collect"><a href="#collect">1. Information We Collect</a></li>
       <li class="drawer-toc-item" data-target="device"><a href="#device">2. Data on Your Device</a></li>
-      <li class="drawer-toc-item" data-target="ai"><a href="#ai">3. AI Features</a></li>
-      <li class="drawer-toc-item" data-target="third-party"><a href="#third-party">4. Third-Party Services</a></li>
-      <li class="drawer-toc-item" data-target="controls"><a href="#controls">5. Your Controls</a></li>
-      <li class="drawer-toc-item" data-target="children"><a href="#children">6. Children's Privacy</a></li>
-      <li class="drawer-toc-item" data-target="retention"><a href="#retention">7. Data Retention</a></li>
-      <li class="drawer-toc-item" data-target="changes"><a href="#changes">8. Policy Changes</a></li>
-      <li class="drawer-toc-item" data-target="contact"><a href="#contact">9. Contact</a></li>
-      <li class="drawer-toc-item" data-target="international-privacy"><a href="#international-privacy">10. GDPR &amp; CCPA Compliance</a></li>
+      <li class="drawer-toc-item" data-target="ai"><a href="#ai">3. AI, Scan &amp; Voice</a></li>
+      <li class="drawer-toc-item" data-target="permissions"><a href="#permissions">4. Permissions We Request</a></li>
+      <li class="drawer-toc-item" data-target="third-party"><a href="#third-party">5. Third-Party Services</a></li>
+      <li class="drawer-toc-item" data-target="controls"><a href="#controls">6. Your Controls</a></li>
+      <li class="drawer-toc-item" data-target="children"><a href="#children">7. Children's Privacy</a></li>
+      <li class="drawer-toc-item" data-target="retention"><a href="#retention">8. Data Retention</a></li>
+      <li class="drawer-toc-item" data-target="changes"><a href="#changes">9. Policy Changes</a></li>
+      <li class="drawer-toc-item" data-target="contact"><a href="#contact">10. Contact</a></li>
+      <li class="drawer-toc-item" data-target="international-privacy"><a href="#international-privacy">11. GDPR &amp; CCPA Compliance</a></li>
     </ul>
   </div>
 
