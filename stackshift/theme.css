@@ -1,0 +1,90 @@
+/* Stack Shift legal pages. Same layout as the other apps on this site, in the game's colours. */
+:root{--bg:#1a1040;--paper:#2a1c5e;--ink:#fbf8ff;--muted:#c9c1e6;--line:#ffffff1f;--soft:#ffffff14;--accent:#ffd72e;--accent-ink:#2a1a00;--tile1:#ff6b8a;--tile2:#ffd72e;--tile3:#5ac8ff;--tile4:#8cf07a;--shadow:0 14px 34px rgba(8,4,28,.35);color-scheme:dark}
+body.light{--bg:#f7f4ff;--paper:#fff;--ink:#22164e;--muted:#5d5482;--line:#22164e1f;--soft:#22164e0f;--accent:#a86a00;--accent-ink:#fff;--shadow:0 12px 28px rgba(34,22,78,.08);color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.7 ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+.site-header{position:sticky;top:0;z-index:10;height:66px;background:color-mix(in srgb,var(--bg) 92%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+.header-inner{height:100%;max-width:1120px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:-.03em;font-size:19px;white-space:nowrap}
+.brand img{width:32px;height:32px;border-radius:9px}
+.header-nav{display:flex;align-items:center;gap:20px;color:var(--muted);font-size:13px;font-weight:650}
+.header-nav a{text-decoration:none;white-space:nowrap}
+.header-nav a:hover,.header-nav a.active{color:var(--ink)}
+.theme-toggle{border:1px solid var(--line);background:transparent;color:var(--ink);width:32px;height:32px;border-radius:50%;font-size:15px;cursor:pointer}
+
+.legal-shell{max-width:1120px;margin:0 auto;padding:36px 28px 80px}
+.document-layout{display:grid;grid-template-columns:198px minmax(0,760px);gap:44px;align-items:start;justify-content:center}
+.toc{position:sticky;top:91px}
+.toc-card{display:flex;flex-direction:column;gap:1px;padding:13px 10px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
+.toc-title{padding:5px 10px 10px;color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.toc a{padding:6px 10px;border-radius:7px;color:var(--muted);font-size:12px;line-height:1.35;text-decoration:none}
+.toc a:hover,.toc a.active{background:var(--soft);color:var(--ink);font-weight:700}
+
+.legal-document{min-width:0}
+.document-header{display:grid;grid-template-columns:minmax(0,1fr) 112px;gap:24px;align-items:center;padding:0 0 32px;margin-bottom:32px;border-bottom:1px solid var(--line)}
+.document-header img{width:112px;height:112px;border-radius:26px;box-shadow:var(--shadow);transform:rotate(4deg)}
+.kicker{margin:0 0 9px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.16em}
+.document-header h1{margin:0 0 12px;font-size:clamp(38px,5vw,56px);line-height:1.05;letter-spacing:-.045em;font-weight:800}
+.lede{max-width:640px;margin:0;color:var(--muted);font-size:18px;line-height:1.5}
+.document-meta{display:flex;flex-wrap:wrap;gap:6px 20px;margin-top:20px;color:var(--muted);font-size:12px}
+.document-meta b{margin-right:5px;color:var(--ink);font-weight:700}
+
+.summary{position:relative;overflow:hidden;padding:24px 24px 20px;margin-bottom:42px;border:1px solid var(--line);border-radius:16px;background:var(--paper);box-shadow:var(--shadow)}
+.summary:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,var(--tile1) 25%,var(--tile2) 25% 50%,var(--tile3) 50% 75%,var(--tile4) 75%)}
+.summary h2{margin:0 0 8px;font-size:18px;letter-spacing:-.02em}
+.summary p{margin:0;color:var(--muted)}
+.summary ul{margin:8px 0 0;padding-left:20px;color:var(--muted)}
+.summary li{padding:3px 0}
+.summary li b{color:var(--ink)}
+
+.legal-section{display:grid;grid-template-columns:40px minmax(0,1fr);gap:16px;padding:0 0 34px;margin:0 0 34px;border-bottom:1px solid var(--line);scroll-margin-top:90px}
+.legal-section:last-child{border-bottom:0;margin-bottom:0}
+.section-number{padding-top:6px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.1em}
+.legal-section h2{margin:0 0 11px;font-size:24px;line-height:1.22;letter-spacing:-.03em;font-weight:800}
+.legal-section h3{margin:21px 0 4px;font-size:15px;font-weight:750}
+.legal-section h3:first-of-type{margin-top:0}
+.legal-section p{margin:0 0 13px;color:var(--muted)}
+.legal-section p:last-child{margin-bottom:0}
+.legal-section ul{margin:0 0 13px;padding-left:20px;color:var(--muted)}
+.legal-section a{color:var(--ink);font-weight:650;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
+
+.simple-table{margin:16px 0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper)}
+.simple-table:last-child{margin-bottom:0}
+.simple-table>div{display:grid;grid-template-columns:140px 1fr;gap:18px;padding:13px 15px;border-bottom:1px solid var(--line)}
+.simple-table>div:last-child{border-bottom:0}
+.simple-table b{font-size:13px}
+.simple-table span{color:var(--muted);font-size:13.5px}
+
+.contact-link{display:inline-block;margin:2px 0 10px;font-size:17px;text-decoration:none!important;color:var(--accent)!important}
+.fine-print{font-size:12px!important}
+
+.site-footer{max-width:1120px;margin:0 auto;padding:24px 28px 32px;display:flex;justify-content:space-between;gap:17px;flex-wrap:wrap;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+.site-footer a{text-decoration:none}
+.site-footer a:hover{color:var(--ink)}
+.site-footer i{font-style:normal;margin:0 9px;opacity:.6}
+
+@media(max-width:850px){
+  .header-inner{padding:0 16px}
+  .header-nav{gap:12px}
+  .legal-shell{padding:26px 16px 55px}
+  .document-layout{display:block}
+  .toc{display:none}
+  .document-header{grid-template-columns:minmax(0,1fr) 72px;gap:14px;padding-bottom:26px;margin-bottom:26px}
+  .document-header img{width:72px;height:72px;border-radius:17px}
+  .document-header h1{font-size:38px}
+  .lede{font-size:16px}
+  .summary{padding:21px 18px 16px;margin-bottom:33px}
+  .legal-section{grid-template-columns:1fr;gap:2px;padding-bottom:28px;margin-bottom:28px}
+  .legal-section h2{font-size:22px}
+  .simple-table>div{grid-template-columns:1fr;gap:2px}
+  .site-footer{padding:21px 16px 28px}
+  .site-footer span:last-child{width:100%}
+}
+@media(max-width:430px){
+  .brand span{display:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
