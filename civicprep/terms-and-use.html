@@ -1,152 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Terms of Use - CivicPrep</title>
-<meta name="description" content="Terms of Use for CivicPrep: US Citizenship Test by Sajid Khokhar.">
-<link rel="icon" href="app-icon.png">
-<style>
-:root{color-scheme:light dark;--bg:#fff;--text:#1d1d1f;--muted:#5f6368;--line:#e5e5e7;--link:#0b57d0;--soft:#f6f6f7}
-@media (prefers-color-scheme:dark){:root{--bg:#111214;--text:#f2f2f3;--muted:#a1a4aa;--line:#2b2d31;--link:#8ab4f8;--soft:#1a1b1e}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
-main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
-a{color:var(--link)}
-.brand{display:flex;align-items:center;gap:12px;margin-bottom:28px;text-decoration:none;color:var(--text);font-weight:650}
-.brand img{width:40px;height:40px;border-radius:9px}
-h1{font-size:2rem;line-height:1.2;margin:0 0 6px}
-.meta{color:var(--muted);font-size:.95rem;margin:0 0 4px}
-.switch{margin:0 0 28px;font-size:.95rem}
-nav.toc{background:var(--soft);border-radius:12px;padding:16px 20px;margin:0 0 32px}
-nav.toc strong{display:block;margin-bottom:6px;font-size:.9rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
-nav.toc ol{margin:0;padding-left:1.3em;columns:2;column-gap:28px;font-size:.95rem}
-nav.toc li{break-inside:avoid;margin:2px 0}
-h2{font-size:1.3rem;margin:40px 0 10px;padding-top:6px;border-top:1px solid var(--line)}
-p{margin:0 0 14px}
-.note{color:var(--muted);font-size:.95rem}
-table{width:100%;border-collapse:collapse;margin:0 0 14px;font-size:.98rem}
-th,td{text-align:left;padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top}
-th{width:42%;font-weight:600;padding-right:12px}
-footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
-footer a{color:var(--muted)}
-@media (max-width:560px){body{font-size:16px}main{padding:28px 16px 48px}nav.toc ol{columns:1}h1{font-size:1.7rem}th,td{display:block;width:100%}th{padding-bottom:0;border-bottom:0}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Terms of Use — CivicPrep</title>
+  <meta name="description" content="Terms of Use for CivicPrep: US Citizenship Test by Sajid Khokhar." />
+  <link rel="icon" href="app-icon.png" />
+  <link rel="stylesheet" href="theme.css" />
 </head>
+
 <body>
-<main>
-  <a class="brand" href="privacy-policy.html" aria-label="CivicPrep"><img src="app-icon.png" alt="" width="40" height="40"><span>CivicPrep</span></a>
-  <h1>Terms of Use</h1>
-  <p class="meta">CivicPrep: US Citizenship Test</p>
-  <p class="meta">Last updated November 12, 2026</p>
-  <p class="switch"><a href="privacy-policy.html">Privacy Policy</a></p>
 
-  <p>By downloading or using CivicPrep: US Citizenship Test, you agree to these Terms of Use. If you do not agree, please do not use the app. These terms work together with Apple's Standard Terms of Use (EULA) and our Privacy Policy.</p>
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="brand">
+        <img src="app-icon.png" class="brand-logo-img" alt="CivicPrep App Icon" />
+        <span class="brand-name">CivicPrep</span>
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Switch Theme">
+          <!-- Icon will be injected by script.js -->
+        </button>
+      </div>
+    </div>
+  </header>
 
-  <nav class="toc" aria-label="Contents">
-    <strong>Contents</strong>
-    <ol>
-      <li><a href="#license">License</a></li>
-      <li><a href="#purpose">What the App Is (and Is Not)</a></li>
-      <li><a href="#purchases">Free Use, Plus &amp; Purchases</a></li>
-      <li><a href="#data">Your Data</a></li>
-      <li><a href="#permissions">App Permissions</a></li>
-      <li><a href="#ai">Libby and AI Features</a></li>
-      <li><a href="#conduct">Acceptable Use</a></li>
-      <li><a href="#disclaimers">Disclaimers &amp; Liability</a></li>
-      <li><a href="#property">Intellectual Property &amp; Sources</a></li>
-      <li><a href="#updates">Updates &amp; Availability</a></li>
-      <li><a href="#termination">Termination</a></li>
-      <li><a href="#governing-law">Governing Law &amp; Jurisdiction</a></li>
-      <li><a href="#age">Age</a></li>
-      <li><a href="#changes">Changes to These Terms</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ol>
-  </nav>
+  <!-- Main Layout -->
+  <main class="main-layout">
 
-  <section id="license">
-    <h2>1. License</h2>
-    <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use CivicPrep on Apple devices you own or control, for personal, non-commercial study.</p>
-    <p>You may not copy, modify, distribute, sell, reverse engineer or decompile the app, or use it to build a competing product, without our written consent.</p>
-  </section>
-  <section id="purpose">
-    <h2>2. What the App Is (and Is Not)</h2>
-    <p><strong>Independent study aid.</strong> CivicPrep is not affiliated with, endorsed by or sponsored by USCIS, the Department of Homeland Security or any government agency.</p>
-    <p><strong>Official content.</strong> Questions and accepted answers come from USCIS's published 2025 civics test study materials. Some answers change with elections, appointments or where you live. Always confirm the current answers on uscis.gov before your interview.</p>
-    <p><strong>No guarantee.</strong> Practice scores are self-marked and are not official results. Using the app does not guarantee that you will pass the test or be granted citizenship.</p>
-    <p><strong>Not legal advice.</strong> Nothing in the app, including Libby, is legal or immigration advice. For your own case, consult USCIS or a licensed attorney or accredited representative.</p>
-  </section>
-  <section id="purchases">
-    <h2>3. Free Use, Plus &amp; Purchases</h2>
-    <p><strong>Free use.</strong> You can use the app free. Free use includes a limited number of official answers you can open and a limited number of Libby and AI helper uses. The limits are shown in the app and may change.</p>
-    <p><strong>CivicPrep Plus.</strong> Plus removes those limits and is available as an auto-renewing monthly subscription, an auto-renewing yearly subscription, or a one-time lifetime purchase. Prices are shown in the app in your local currency before you buy. All purchases are processed by Apple and are governed by the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard Terms of Use (EULA)</a>.</p>
-    <p><strong>Auto-renewal.</strong> Payment is charged to your Apple Account when you confirm the purchase. Monthly and yearly subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends. The lifetime purchase is a one-time charge and does not renew.</p>
-    <p><strong>Managing and cancelling.</strong> Manage or cancel any time in iOS Settings &rarr; your name &rarr; Subscriptions. You keep access until the end of the paid period.</p>
-    <p><strong>Restore.</strong> Use Restore purchases on the Plus screen on a new device or after reinstalling.</p>
-    <p><strong>Refunds.</strong> Apple handles all refunds. Request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
-  </section>
-  <section id="data">
-    <h2>4. Your Data</h2>
-    <p>You own the information you enter. Your progress, dates and settings are stored on your device; the app has no account and no cloud sync. You can export or erase your data at any time in Settings.</p>
-    <p>We use the anonymous technical data described in our Privacy Policy to keep the app working and to improve it.</p>
-  </section>
-  <section id="permissions">
-    <h2>5. App Permissions</h2>
-    <p>CivicPrep asks for notifications (your study reminder and occasional announcements) and for App Tracking Transparency (anonymous app-performance measurement). Both are optional and can be changed in iOS Settings. It does not use your camera, microphone, photos, location or contacts. Details are in the Privacy Policy.</p>
-  </section>
-  <section id="ai">
-    <h2>6. Libby and AI Features</h2>
-    <p>Libby and the study helpers run on your device with Apple Intelligence and need a supported device. Their answers are generated by AI, can be wrong or incomplete, and are not official. Check every answer against the official USCIS list.</p>
-  </section>
-  <section id="conduct">
-    <h2>7. Acceptable Use</h2>
-    <p>Do not misuse the app: do not try to break, overload or reverse engineer it, bypass the free limits or purchase checks, or use it for anything unlawful. We may stop access if you do.</p>
-  </section>
-  <section id="disclaimers">
-    <h2>8. Disclaimers &amp; Liability</h2>
-    <p><strong>Provided &ldquo;as is&rdquo;.</strong> The app is provided without warranties of any kind, including accuracy, completeness, fitness for a particular purpose or uninterrupted operation. Government rules and test content can change at any time.</p>
-    <p><strong>Limitation of liability.</strong> To the maximum extent permitted by law, Sajid Khokhar is not liable for indirect, incidental or consequential damages, including any outcome of an immigration application or test. Total liability is limited to the amount you paid for the app in the 12 months before the claim. Nothing here limits rights you have under mandatory consumer law.</p>
-  </section>
-  <section id="property">
-    <h2>9. Intellectual Property &amp; Sources</h2>
-    <p>The app's design, code, graphics and our own wording are owned by Sajid Khokhar. Official questions and accepted answers are from USCIS, a U.S. government source, and are credited in the app under Settings &rarr; USCIS sources. Icons and third-party software remain the property of their owners and are used under their licenses.</p>
-  </section>
-  <section id="updates">
-    <h2>10. Updates &amp; Availability</h2>
-    <p>We may update, change or discontinue the app or any feature at any time. We are not liable for any period when it is unavailable.</p>
-  </section>
-  <section id="termination">
-    <h2>11. Termination</h2>
-    <p>These terms last until ended. Your right to use the app ends automatically if you break them. You can stop at any time by deleting the app (cancel any subscription separately in your Apple Account).</p>
-  </section>
-  <section id="governing-law">
-    <h2>12. Governing Law &amp; Jurisdiction</h2>
-    <table>
-      <tr><th>Primary jurisdiction</th><td>India</td></tr>
-    </table>
-    <p>These terms are governed by the laws of India.</p>
-    <p><strong>International users.</strong> If you live in the European Union, the United States or another place with mandatory consumer-protection law, your local law and courts apply as that law requires.</p>
-  </section>
-  <section id="age">
-    <h2>13. Age</h2>
-    <p>The App Store age rating is 4+. Children under 13 should use the app with a parent or guardian, who accepts these terms on their behalf. See Children and Age in the Privacy Policy.</p>
-  </section>
-  <section id="changes">
-    <h2>14. Changes to These Terms</h2>
-    <p>We may update these terms. We will tell you about material changes in the app or in the App Store update notes. Continued use after a change means you accept the updated terms.</p>
-  </section>
-  <section id="contact">
-    <h2>15. Contact</h2>
-    <table>
-      <tr><th>Developer</th><td>Sajid Khokhar</td></tr>
-      <tr><th>Email</th><td><a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a></td></tr>
-      <tr><th>Response time</th><td>Within 30 days</td></tr>
-    </table>
-  </section>
+    <!-- Hero Card -->
+    <div class="hero-card">
+      <div class="app-subtitle">CivicPrep: US Citizenship Test</div>
+      <h1>Terms of Use</h1>
+      <div class="update-date">Last updated November 12, 2026</div>
+      <div>
+        <a href="#" class="doc-link" data-link-type="privacy" style="margin-top: 14px; font-weight: 600; color: var(--accent); text-decoration: none;">Privacy Policy &rarr;</a>
+      </div>
+    </div>
 
-  <footer>
-    <p>&copy; 2026 Sajid Khokhar. <a href="privacy-policy.html">Privacy Policy</a> &middot; <a href="terms-and-use.html">Terms of Use</a> &middot; <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple EULA</a> &middot; <a href="mailto:support.sajidapps@gmail.com">Contact</a></p>
+    <!-- Dual Column Container -->
+    <div class="grid-container">
+
+      <!-- Sticky Sidebar (Table of Contents) -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3>Sections</h3>
+          <ul class="toc-list">
+            <li class="toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
+            <li class="toc-item" data-target="license"><a href="#license">1. License</a></li>
+            <li class="toc-item" data-target="purpose"><a href="#purpose">2. What the App Is (and Is Not)</a></li>
+            <li class="toc-item" data-target="purchases"><a href="#purchases">3. Free Use, Plus &amp; Purchases</a></li>
+            <li class="toc-item" data-target="data"><a href="#data">4. Your Data</a></li>
+            <li class="toc-item" data-target="permissions"><a href="#permissions">5. App Permissions</a></li>
+            <li class="toc-item" data-target="ai"><a href="#ai">6. Libby and AI Features</a></li>
+            <li class="toc-item" data-target="conduct"><a href="#conduct">7. Acceptable Use</a></li>
+            <li class="toc-item" data-target="disclaimers"><a href="#disclaimers">8. Disclaimers &amp; Liability</a></li>
+            <li class="toc-item" data-target="property"><a href="#property">9. Intellectual Property &amp; Sources</a></li>
+            <li class="toc-item" data-target="updates"><a href="#updates">10. Updates &amp; Availability</a></li>
+            <li class="toc-item" data-target="termination"><a href="#termination">11. Termination</a></li>
+            <li class="toc-item" data-target="governing-law"><a href="#governing-law">12. Governing Law &amp; Jurisdiction</a></li>
+            <li class="toc-item" data-target="age"><a href="#age">13. Age</a></li>
+            <li class="toc-item" data-target="changes"><a href="#changes">14. Changes to These Terms</a></li>
+            <li class="toc-item" data-target="contact"><a href="#contact">15. Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Content Column -->
+      <div class="content-area">
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <input type="text" id="search-input" class="search-input" placeholder="Search terms of use..." />
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <button id="search-clear" class="search-clear" title="Clear search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search Empty State -->
+        <div id="search-empty" class="search-empty">
+          <div class="search-empty-icon">🔍</div>
+          <h4>No matches found</h4>
+          <p>We couldn't find any sections matching your search term. Please try another query.</p>
+        </div>
+
+        <!-- Intro -->
+        <div class="group" id="intro">
+          <div class="group-label">Introduction</div>
+          <div class="glass-card card-intro-text">
+            By downloading or using CivicPrep: US Citizenship Test, you agree to these Terms of Use. If you do not agree, please do not use the app. These terms work together with Apple's Standard Terms of Use (EULA) and our Privacy Policy.
+          </div>
+        </div>
+
+        <div class="group" id="license">
+          <div class="group-label">1. License</div>
+          <div class="glass-card">
+            <div class="row-block">
+              We grant you a personal, non-exclusive, non-transferable, revocable license to use CivicPrep on Apple devices you own or control, for personal, non-commercial study.
+            </div>
+            <div class="row-block">
+              You may not copy, modify, distribute, sell, reverse engineer or decompile the app, or use it to build a competing product, without our written consent.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="purpose">
+          <div class="group-label">2. What the App Is (and Is Not)</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Independent study aid.</strong> CivicPrep is not affiliated with, endorsed by or sponsored by USCIS, the Department of Homeland Security or any government agency.
+            </div>
+            <div class="row-block">
+              <strong>Official content.</strong> Questions and accepted answers come from USCIS's published 2025 civics test study materials. Some answers change with elections, appointments or where you live. Always confirm the current answers on uscis.gov before your interview.
+            </div>
+            <div class="row-block">
+              <strong>No guarantee.</strong> Practice scores are self-marked and are not official results. Using the app does not guarantee that you will pass the test or be granted citizenship.
+            </div>
+            <div class="row-block">
+              <strong>Not legal advice.</strong> Nothing in the app, including Libby, is legal or immigration advice. For your own case, consult USCIS or a licensed attorney or accredited representative.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="purchases">
+          <div class="group-label">3. Free Use, Plus &amp; Purchases</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Free use.</strong> You can use the app free. Free use includes a limited number of official answers you can open and a limited number of Libby and AI helper uses. The limits are shown in the app and may change.
+            </div>
+            <div class="row-block">
+              <strong>CivicPrep Plus.</strong> Plus removes those limits and is available as an auto-renewing monthly subscription, an auto-renewing yearly subscription, or a one-time lifetime purchase. Prices are shown in the app in your local currency before you buy. All purchases are processed by Apple and are governed by the <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple Standard Terms of Use (EULA)</a>.
+            </div>
+            <div class="row-block">
+              <strong>Auto-renewal.</strong> Payment is charged to your Apple Account when you confirm the purchase. Monthly and yearly subscriptions renew automatically unless you cancel at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends. The lifetime purchase is a one-time charge and does not renew.
+            </div>
+            <div class="row-block">
+              <strong>Managing and cancelling.</strong> Manage or cancel any time in iOS Settings &rarr; your name &rarr; Subscriptions. You keep access until the end of the paid period.
+            </div>
+            <div class="row-block">
+              <strong>Restore.</strong> Use Restore purchases on the Plus screen on a new device or after reinstalling.
+            </div>
+            <div class="row-block">
+              <strong>Refunds.</strong> Apple handles all refunds. Request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="data">
+          <div class="group-label">4. Your Data</div>
+          <div class="glass-card">
+            <div class="row-block">
+              You own the information you enter. Your progress, dates and settings are stored on your device; the app has no account and no cloud sync. You can export or erase your data at any time in Settings.
+            </div>
+            <div class="row-block">
+              We use the anonymous technical data described in our Privacy Policy to keep the app working and to improve it.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="permissions">
+          <div class="group-label">5. App Permissions</div>
+          <div class="glass-card">
+            <div class="row-block">
+              CivicPrep asks for notifications (your study reminder and occasional announcements) and for App Tracking Transparency (anonymous app-performance measurement). Both are optional and can be changed in iOS Settings. It does not use your camera, microphone, photos, location or contacts. Details are in the Privacy Policy.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="ai">
+          <div class="group-label">6. Libby and AI Features</div>
+          <div class="glass-card">
+            <div class="row-block">
+              Libby and the study helpers run on your device with Apple Intelligence and need a supported device. Their answers are generated by AI, can be wrong or incomplete, and are not official. Check every answer against the official USCIS list.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="conduct">
+          <div class="group-label">7. Acceptable Use</div>
+          <div class="glass-card">
+            <div class="row-block">
+              Do not misuse the app: do not try to break, overload or reverse engineer it, bypass the free limits or purchase checks, or use it for anything unlawful. We may stop access if you do.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="disclaimers">
+          <div class="group-label">8. Disclaimers &amp; Liability</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Provided &ldquo;as is&rdquo;.</strong> The app is provided without warranties of any kind, including accuracy, completeness, fitness for a particular purpose or uninterrupted operation. Government rules and test content can change at any time.
+            </div>
+            <div class="row-block">
+              <strong>Limitation of liability.</strong> To the maximum extent permitted by law, Sajid Khokhar is not liable for indirect, incidental or consequential damages, including any outcome of an immigration application or test. Total liability is limited to the amount you paid for the app in the 12 months before the claim. Nothing here limits rights you have under mandatory consumer law.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="property">
+          <div class="group-label">9. Intellectual Property &amp; Sources</div>
+          <div class="glass-card">
+            <div class="row-block">
+              The app's design, code, graphics and our own wording are owned by Sajid Khokhar. Official questions and accepted answers are from USCIS, a U.S. government source, and are credited in the app under Settings &rarr; USCIS sources. Icons and third-party software remain the property of their owners and are used under their licenses.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="updates">
+          <div class="group-label">10. Updates &amp; Availability</div>
+          <div class="glass-card">
+            <div class="row-block">
+              We may update, change or discontinue the app or any feature at any time. We are not liable for any period when it is unavailable.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="termination">
+          <div class="group-label">11. Termination</div>
+          <div class="glass-card">
+            <div class="row-block">
+              These terms last until ended. Your right to use the app ends automatically if you break them. You can stop at any time by deleting the app (cancel any subscription separately in your Apple Account).
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="governing-law">
+          <div class="group-label">12. Governing Law &amp; Jurisdiction</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Primary jurisdiction</span>
+              <span class="row-value">India</span>
+            </div>
+            <div class="row-block">
+              These terms are governed by the laws of India.
+            </div>
+            <div class="row-block">
+              <strong>International users.</strong> If you live in the European Union, the United States or another place with mandatory consumer-protection law, your local law and courts apply as that law requires.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="age">
+          <div class="group-label">13. Age</div>
+          <div class="glass-card">
+            <div class="row-block">
+              The App Store age rating is 4+. Children under 13 should use the app with a parent or guardian, who accepts these terms on their behalf. See Children and Age in the Privacy Policy.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="changes">
+          <div class="group-label">14. Changes to These Terms</div>
+          <div class="glass-card">
+            <div class="row-block">
+              We may update these terms. We will tell you about material changes in the app or in the App Store update notes. Continued use after a change means you accept the updated terms.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="contact">
+          <div class="group-label">15. Contact</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Developer</span>
+              <span class="row-value">Sajid Khokhar</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Email</span>
+              <span class="row-value"><a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a></span>
+            </div>
+            <div class="row">
+              <span class="row-label">Response time</span>
+              <span class="row-value">Within 30 days</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 Sajid Khokhar. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#" data-link-type="privacy">Privacy Policy</a>
+      <span>&middot;</span>
+      <a href="#" data-link-type="terms">Terms of Use</a>
+      <span>&middot;</span>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple EULA</a>
+      <span>&middot;</span>
+      <a href="mailto:support.sajidapps@gmail.com">Contact</a>
+    </div>
   </footer>
-</main>
+
+  <!-- Mobile Floating Drawer Navigation Button -->
+  <button id="mobile-nav-fab" class="mobile-nav-fab" title="Table of Contents">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
+  <!-- Mobile Drawer Overlay & Content -->
+  <div id="drawer-overlay" class="mobile-drawer-overlay"></div>
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Table of Contents</span>
+      <button id="drawer-close" class="mobile-drawer-close" title="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="toc-list">
+            <li class="drawer-toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
+            <li class="drawer-toc-item" data-target="license"><a href="#license">1. License</a></li>
+            <li class="drawer-toc-item" data-target="purpose"><a href="#purpose">2. What the App Is (and Is Not)</a></li>
+            <li class="drawer-toc-item" data-target="purchases"><a href="#purchases">3. Free Use, Plus &amp; Purchases</a></li>
+            <li class="drawer-toc-item" data-target="data"><a href="#data">4. Your Data</a></li>
+            <li class="drawer-toc-item" data-target="permissions"><a href="#permissions">5. App Permissions</a></li>
+            <li class="drawer-toc-item" data-target="ai"><a href="#ai">6. Libby and AI Features</a></li>
+            <li class="drawer-toc-item" data-target="conduct"><a href="#conduct">7. Acceptable Use</a></li>
+            <li class="drawer-toc-item" data-target="disclaimers"><a href="#disclaimers">8. Disclaimers &amp; Liability</a></li>
+            <li class="drawer-toc-item" data-target="property"><a href="#property">9. Intellectual Property &amp; Sources</a></li>
+            <li class="drawer-toc-item" data-target="updates"><a href="#updates">10. Updates &amp; Availability</a></li>
+            <li class="drawer-toc-item" data-target="termination"><a href="#termination">11. Termination</a></li>
+            <li class="drawer-toc-item" data-target="governing-law"><a href="#governing-law">12. Governing Law &amp; Jurisdiction</a></li>
+            <li class="drawer-toc-item" data-target="age"><a href="#age">13. Age</a></li>
+            <li class="drawer-toc-item" data-target="changes"><a href="#changes">14. Changes to These Terms</a></li>
+            <li class="drawer-toc-item" data-target="contact"><a href="#contact">15. Contact</a></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
