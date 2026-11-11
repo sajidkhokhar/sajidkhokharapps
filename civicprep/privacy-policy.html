@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Privacy Policy — CivicPrep</title>
+  <meta name="description" content="Privacy Policy for CivicPrep: US Citizenship Test by Sajid Khokhar." />
+  <link rel="icon" href="app-icon.png" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <a href="#" class="brand">
+        <img src="app-icon.png" class="brand-logo-img" alt="CivicPrep App Icon" />
+        <span class="brand-name">CivicPrep</span>
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Switch Theme">
+          <!-- Icon will be injected by script.js -->
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="main-layout">
+
+    <!-- Hero Card -->
+    <div class="hero-card">
+      <div class="app-subtitle">CivicPrep: US Citizenship Test</div>
+      <h1>Privacy Policy</h1>
+      <div class="update-date">Last updated November 12, 2026</div>
+      <div>
+        <a href="#" class="doc-link" data-link-type="terms" style="margin-top: 14px; font-weight: 600; color: var(--accent); text-decoration: none;">Terms of Use &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Dual Column Container -->
+    <div class="grid-container">
+
+      <!-- Sticky Sidebar (Table of Contents) -->
+      <aside class="sidebar">
+        <div class="sidebar-card">
+          <h3>Sections</h3>
+          <ul class="toc-list">
+            <li class="toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
+            <li class="toc-item" data-target="collect"><a href="#collect">1. Information We Collect</a></li>
+            <li class="toc-item" data-target="device"><a href="#device">2. Data Stored on Your Device Only</a></li>
+            <li class="toc-item" data-target="ai"><a href="#ai">3. Libby and AI Features</a></li>
+            <li class="toc-item" data-target="permissions"><a href="#permissions">4. Permissions We Request</a></li>
+            <li class="toc-item" data-target="third-party"><a href="#third-party">5. Third-Party Services</a></li>
+            <li class="toc-item" data-target="controls"><a href="#controls">6. Your Controls</a></li>
+            <li class="toc-item" data-target="children"><a href="#children">7. Children and Age</a></li>
+            <li class="toc-item" data-target="retention"><a href="#retention">8. Data Retention</a></li>
+            <li class="toc-item" data-target="security"><a href="#security">9. Security</a></li>
+            <li class="toc-item" data-target="changes"><a href="#changes">10. Policy Changes</a></li>
+            <li class="toc-item" data-target="international-privacy"><a href="#international-privacy">11. Your Rights (GDPR, UK GDPR, CCPA/CPRA)</a></li>
+            <li class="toc-item" data-target="disclaimer"><a href="#disclaimer">12. Not Affiliated with USCIS</a></li>
+            <li class="toc-item" data-target="contact"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Content Column -->
+      <div class="content-area">
+
+        <!-- Search Bar -->
+        <div class="search-container">
+          <div class="search-input-wrapper">
+            <input type="text" id="search-input" class="search-input" placeholder="Search privacy policy..." />
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <button id="search-clear" class="search-clear" title="Clear search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Search Empty State -->
+        <div id="search-empty" class="search-empty">
+          <div class="search-empty-icon">🔍</div>
+          <h4>No matches found</h4>
+          <p>We couldn't find any sections matching your search term. Please try another query.</p>
+        </div>
+
+        <!-- Intro -->
+        <div class="group" id="intro">
+          <div class="group-label">Introduction</div>
+          <div class="glass-card card-intro-text">
+            CivicPrep helps people study for the U.S. naturalization civics test. It has no account, no ads and no sign-up with a name or email. Your study progress stays on your device. This policy explains, in plain words, what the app stores, the small amount of anonymous technical data it sends, every permission it asks for and why, and who can use the app.
+          </div>
+        </div>
+
+        <div class="group" id="collect">
+          <div class="group-label">1. Information We Collect</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Usage analytics.</strong> We collect anonymous data about how the app is used through Firebase Analytics: for example which screens and features are opened, onboarding steps completed, whether a purchase screen was shown, app version, device type, iOS version and language. Events never contain your typed words, your Libby messages, the dates you enter, your name, or your email. Libby messages are counted and measured by length only.
+            </div>
+            <div class="row-block">
+              <strong>Crash reports.</strong> If the app crashes, an anonymous report is sent through Firebase Crashlytics so we can fix it. It describes the crash and the device, not your study data.
+            </div>
+            <div class="row-block">
+              <strong>Anonymous sign-in.</strong> The app signs in to Firebase anonymously (no name, email or password) and gets a random identifier. The identifier is kept in the iOS Keychain, which can survive deleting and reinstalling the app, so the same device keeps the same random identifier. It is not linked to your identity.
+            </div>
+            <div class="row-block">
+              <strong>Remote settings.</strong> The app reads a small settings document from Firebase (Cloud Firestore), such as the current app version and how many free answers and Libby uses are allowed. Nothing about you is sent to read it, except what any network request reveals (your IP address).
+            </div>
+            <div class="row-block">
+              <strong>Push notification token.</strong> The app registers with Apple Push Notification service and Firebase Cloud Messaging, which creates a device token so we can send an occasional announcement if you allow notifications. It is not linked to your study data.
+            </div>
+            <div class="row-block">
+              <strong>Purchases.</strong> Payments are handled by Apple. To unlock Plus, the app asks Apple to check your App Store purchase receipt. We never see your card, Apple Account or payment details.
+            </div>
+            <div class="row-block">
+              <strong>Support email.</strong> If you write to us, we receive your email address and message, only to answer you.
+            </div>
+          </div>
+          <div class="group-note">We do not collect your name, email, A-Number, immigration case details, location, contacts, photos, microphone audio or health data.</div>
+        </div>
+
+        <div class="group" id="device">
+          <div class="group-label">2. Data Stored on Your Device Only</div>
+          <div class="glass-card">
+            <div class="row-block">
+              This information is stored in a file on your device. We have no access to it and it is not uploaded.
+            </div>
+            <div class="row-block">
+              Study progress for each question, bookmarks, practice and mock-interview history, study time and streak.
+            </div>
+            <div class="row-block">
+              Your settings: language, text size, haptics, voice, daily goal, reminder time and the 65/20 option.
+            </div>
+            <div class="row-block">
+              Optional details you choose to enter: your N-400 filing date (used only to explain which test applies), your interview date (used only for a countdown) and the state you pick in &ldquo;Your state&rdquo;.
+            </div>
+            <div class="row-block">
+              How many free answers and free Libby uses you have used, so the free limits work. This count is not cleared by &ldquo;Erase all data&rdquo;, so erasing cannot be used to get the free allowance again.
+            </div>
+            <div class="row-block">
+              Your Libby conversation is kept only while the app is open and is cleared when you erase your data.
+            </div>
+          </div>
+          <div class="group-note">None of this leaves your device unless you choose to export it yourself with Export my data.</div>
+        </div>
+
+        <div class="group" id="ai">
+          <div class="group-label">3. Libby and AI Features</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>On-device only.</strong> Libby, Explain simply, Memory trick, Like an officer, the 7-day study plan and extra practice sentences use Apple Intelligence (Apple's on-device model). What you type and the question text are processed on your device and are not sent to us or to any other AI service.
+            </div>
+            <div class="row-block">
+              <strong>Device requirement.</strong> These features need an iPhone or iPad that supports Apple Intelligence. They are hidden on other devices, and you can turn them off in Settings.
+            </div>
+            <div class="row-block">
+              <strong>Not advice.</strong> Libby is written by AI, can make mistakes, and is not legal advice or an official USCIS answer. Always check uscis.gov for your own case.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="permissions">
+          <div class="group-label">4. Permissions We Request</div>
+          <div class="glass-card">
+            <div class="row-block">
+              CivicPrep asks only for the two permissions below, on the first screen, and uses a few other iOS features that need no permission. Everything is optional: if you say no, every study feature works the same. You can change any choice later in iOS Settings &rarr; CivicPrep.
+            </div>
+            <div class="row-block">
+              <strong>Notifications.</strong> Used for your optional daily study reminder (scheduled on your device) and for occasional announcements delivered through Firebase Cloud Messaging. We never use notifications for advertising. If you decline, the reminder cannot be sent. Change it any time in iOS Settings &rarr; Notifications.
+            </div>
+            <div class="row-block">
+              <strong>App Tracking Transparency.</strong> Asks whether CivicPrep may use your device's advertising identifier for app-performance measurement through Firebase Analytics. CivicPrep shows no ads, does not sell your data and does not share it with advertisers or data brokers. If you decline, nothing in the app changes.
+            </div>
+            <div class="row-block">
+              <strong>Apple Intelligence (optional).</strong> A feature of iOS on supported devices, not a permission prompt. It powers Libby on your device.
+            </div>
+            <div class="row-block">
+              <strong>Read aloud.</strong> Questions are read with the iOS speech voices already on your device. No permission is needed, and nothing is recorded.
+            </div>
+            <div class="row-block">
+              <strong>Widgets.</strong> Home Screen and Lock Screen widgets read a small summary (your progress, today's question and your interview date if you set one) from storage shared with the app on your device. No permission prompt, and nothing is sent anywhere.
+            </div>
+            <div class="row-block">
+              <strong>Haptics.</strong> Small taps you can feel. No permission needed; you can switch them off in Settings.
+            </div>
+            <div class="row-block">
+              <strong>Internet.</strong> Studying works offline. The app uses the internet for the optional USCIS news screen, opening links in your browser, purchases and the Firebase services above.
+            </div>
+          </div>
+          <div class="group-note">CivicPrep does not request access to your camera, microphone, speech recognition, photos, location, contacts, calendars, health data, Bluetooth, local network or Face ID.</div>
+        </div>
+
+        <div class="group" id="third-party">
+          <div class="group-label">5. Third-Party Services</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Firebase &mdash; Google LLC</span>
+              <span class="row-value"><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy Policy</a></span>
+            </div>
+            <div class="row-block">
+              Firebase Analytics (anonymous usage), Crashlytics (crash reports), Authentication (anonymous sign-in), Cloud Firestore (read-only remote settings) and Cloud Messaging (notifications). Google acts as our service provider and processes this data under its own terms.
+            </div>
+            <div class="row">
+              <span class="row-label">Apple &mdash; StoreKit and Apple Intelligence</span>
+              <span class="row-value"><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Privacy Policy</a></span>
+            </div>
+            <div class="row-block">
+              Apple processes purchases, receipt checks, push delivery and on-device AI. CivicPrep does not use iCloud or any other cloud sync for your data.
+            </div>
+            <div class="row">
+              <span class="row-label">USCIS &mdash; uscis.gov</span>
+              <span class="row-value"><a href="https://www.uscis.gov/website-policies/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a></span>
+            </div>
+            <div class="row-block">
+              The optional news screen downloads USCIS's public news feed, and some links open uscis.gov and other government sites in your browser. Like any website, they can see your IP address. The app sends them nothing about you.
+            </div>
+          </div>
+          <div class="group-note">CivicPrep is ad-free. We do not sell, rent or share your personal information with advertisers or any other third party.</div>
+        </div>
+
+        <div class="group" id="controls">
+          <div class="group-label">6. Your Controls</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Edit your information</span>
+              <span class="row-value">Settings and each screen in the app</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Export your data</span>
+              <span class="row-value">Settings &rarr; Export my data (JSON)</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Erase your data</span>
+              <span class="row-value">Settings &rarr; Erase all data</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Notifications</span>
+              <span class="row-value">iOS Settings &rarr; Notifications &rarr; CivicPrep</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Tracking (analytics identifier)</span>
+              <span class="row-value">iOS Settings &rarr; Privacy &amp; Security &rarr; Tracking</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Turn off Libby</span>
+              <span class="row-value">Settings &rarr; Libby AI &rarr; Study helpers</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Delete the app</span>
+              <span class="row-value">Removes all data stored on your device</span>
+            </div>
+          </div>
+          <div class="group-note">Erase all data removes your progress, practice history, dates and reminders from the device and cannot be undone. Because we hold no name or email, we cannot look up data about one person; analytics and crash data are anonymous and expire automatically (see Data Retention).</div>
+        </div>
+
+        <div class="group" id="children">
+          <div class="group-label">7. Children and Age</div>
+          <div class="glass-card">
+            <div class="row-block">
+              <strong>Age rating.</strong> The App Store age rating for CivicPrep is 4+. The content has nothing unsuitable for young children, so anyone aged 4 or over may use the app.
+            </div>
+            <div class="row-block">
+              <strong>Who it is for.</strong> CivicPrep is made for adults and families preparing for the U.S. naturalization test. We recommend that children under 13 use it with a parent or guardian, who can also manage the permissions above in iOS Settings.
+            </div>
+            <div class="row-block">
+              <strong>Under 13.</strong> We do not knowingly collect personal information from children under 13, and the app has no account, chat with other people, ads or social features. The anonymous technical data in section 1 is the same for every user. If you believe a child has given us personal information, email us and we will delete it promptly.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="retention">
+          <div class="group-label">8. Data Retention</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Your data on your device</span>
+              <span class="row-value">Until you erase it or delete the app</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Firebase Analytics</span>
+              <span class="row-value">Up to 2 months</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Firebase Crashlytics</span>
+              <span class="row-value">Up to 90 days</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Anonymous sign-in identifier</span>
+              <span class="row-value">Until the Keychain entry or the Firebase account is removed</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Support emails</span>
+              <span class="row-value">Until your request is resolved</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="security">
+          <div class="group-label">9. Security</div>
+          <div class="glass-card">
+            <div class="row-block">
+              Data on your device is protected by iOS (including device encryption when you use a passcode). Data sent to Firebase travels over encrypted connections. No method is perfectly secure, but we keep the data we collect minimal and anonymous.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="changes">
+          <div class="group-label">10. Policy Changes</div>
+          <div class="glass-card">
+            <div class="row-block">
+              We may update this policy. Changes are posted on this page with a new date. For significant changes we will tell you in the app or in the App Store update notes. Continued use after a change means you accept the updated policy.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="international-privacy">
+          <div class="group-label">11. Your Rights (GDPR, UK GDPR, CCPA/CPRA)</div>
+          <div class="glass-card">
+            <div class="row-block">
+              Depending on where you live, you may have the right to access, correct, delete, export or limit the use of your personal information, and to object to processing. Most of this you can do yourself in the app (see Your Controls). We do not sell or share personal information for cross-context advertising, and we do not use it to make automated decisions about you.
+            </div>
+            <div class="row-block">
+              Where the law requires a legal basis, we rely on our legitimate interest in keeping the app working and improving it (anonymous analytics and crash reports) and on your consent where iOS asks you for it (notifications and tracking). Our servers and Google's may be outside your country, and Google transfers data under its own safeguards.
+            </div>
+            <div class="row-block">
+              To use a right or ask a question, email <a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a>.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="disclaimer">
+          <div class="group-label">12. Not Affiliated with USCIS</div>
+          <div class="glass-card">
+            <div class="row-block">
+              CivicPrep is an independent study app. It is not affiliated with, endorsed by or sponsored by U.S. Citizenship and Immigration Services (USCIS), the Department of Homeland Security or any government agency. Never enter confidential case information in the app; it does not ask for it.
+            </div>
+          </div>
+        </div>
+
+        <div class="group" id="contact">
+          <div class="group-label">Contact</div>
+          <div class="glass-card">
+            <div class="row">
+              <span class="row-label">Developer</span>
+              <span class="row-value">Sajid Khokhar</span>
+            </div>
+            <div class="row">
+              <span class="row-label">Email</span>
+              <span class="row-value"><a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a></span>
+            </div>
+            <div class="row">
+              <span class="row-label">Response time</span>
+              <span class="row-value">Within 30 days</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <p>&copy; 2026 Sajid Khokhar. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#" data-link-type="privacy">Privacy Policy</a>
+      <span>&middot;</span>
+      <a href="#" data-link-type="terms">Terms of Use</a>
+      <span>&middot;</span>
+      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Apple EULA</a>
+      <span>&middot;</span>
+      <a href="mailto:support.sajidapps@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+  <!-- Mobile Floating Drawer Navigation Button -->
+  <button id="mobile-nav-fab" class="mobile-nav-fab" title="Table of Contents">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
+  <!-- Mobile Drawer Overlay & Content -->
+  <div id="drawer-overlay" class="mobile-drawer-overlay"></div>
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <span class="mobile-drawer-title">Table of Contents</span>
+      <button id="drawer-close" class="mobile-drawer-close" title="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <ul class="toc-list">
+            <li class="drawer-toc-item active" data-target="intro"><a href="#intro">Introduction</a></li>
+            <li class="drawer-toc-item" data-target="collect"><a href="#collect">1. Information We Collect</a></li>
+            <li class="drawer-toc-item" data-target="device"><a href="#device">2. Data Stored on Your Device Only</a></li>
+            <li class="drawer-toc-item" data-target="ai"><a href="#ai">3. Libby and AI Features</a></li>
+            <li class="drawer-toc-item" data-target="permissions"><a href="#permissions">4. Permissions We Request</a></li>
+            <li class="drawer-toc-item" data-target="third-party"><a href="#third-party">5. Third-Party Services</a></li>
+            <li class="drawer-toc-item" data-target="controls"><a href="#controls">6. Your Controls</a></li>
+            <li class="drawer-toc-item" data-target="children"><a href="#children">7. Children and Age</a></li>
+            <li class="drawer-toc-item" data-target="retention"><a href="#retention">8. Data Retention</a></li>
+            <li class="drawer-toc-item" data-target="security"><a href="#security">9. Security</a></li>
+            <li class="drawer-toc-item" data-target="changes"><a href="#changes">10. Policy Changes</a></li>
+            <li class="drawer-toc-item" data-target="international-privacy"><a href="#international-privacy">11. Your Rights (GDPR, UK GDPR, CCPA/CPRA)</a></li>
+            <li class="drawer-toc-item" data-target="disclaimer"><a href="#disclaimer">12. Not Affiliated with USCIS</a></li>
+            <li class="drawer-toc-item" data-target="contact"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
