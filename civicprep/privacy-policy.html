@@ -35,9 +35,6 @@
 <strong>Anonymous sign-in.</strong> The app signs in to Firebase anonymously (no name, email or password) and gets a random identifier. The identifier is kept in the iOS Keychain, which can survive deleting and reinstalling the app, so the same device keeps the same random identifier. It is not linked to your identity.
             </div>
 <div class="row-block">
-<strong>Remote settings.</strong> The app reads a small settings document from Firebase (Cloud Firestore), such as the current app version and how many free answers and Libby uses are allowed. Nothing about you is sent to read it, except what any network request reveals (your IP address).
-            </div>
-<div class="row-block">
 <strong>Push notification token.</strong> The app registers with Apple Push Notification service and Firebase Cloud Messaging, which creates a device token so we can send an occasional announcement if you allow notifications. It is not linked to your study data.
             </div>
 <div class="row-block">
@@ -110,7 +107,7 @@
 <span class="row-value"><a href="https://firebase.google.com/support/privacy" rel="noopener" target="_blank">Privacy Policy</a></span>
 </div>
 <div class="row-block">
-              Firebase Analytics (anonymous usage), Crashlytics (crash reports), Authentication (anonymous sign-in), Cloud Firestore (read-only remote settings) and Cloud Messaging (notifications). Google acts as our service provider and processes this data under its own terms.
+              Firebase Analytics (anonymous usage), Crashlytics (crash reports), Authentication (anonymous sign-in), Cloud Firestore and Cloud Messaging (notifications). Google acts as our service provider and processes this data under its own terms.
             </div>
 <div class="row">
 <span class="row-label">Apple — StoreKit and Apple Intelligence</span>
