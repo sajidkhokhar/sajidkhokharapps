@@ -7,56 +7,104 @@
 <meta name="description" content="Habon Privacy Policy.">
 <title>Privacy Policy | Habon</title>
 <link rel="icon" href="app-icon.svg">
-<link rel="stylesheet" href="theme.css?v=1">
+<link rel="stylesheet" href="theme.css?v=2">
 </head>
 <body>
 <main>
 <header><img src="app-icon.svg" alt=""><span>Habon</span></header>
 <h1>Privacy Policy</h1>
-<p class="date">Last updated November 20, 2026</p>
-<p class="lead">Habon keeps your habits on your device. We don't have accounts, ads or analytics, and we don't collect your data.</p>
+<p class="date">Last updated November 24, 2026</p>
+<p class="lead">Your habits stay on your device. Habon has no account, no ads and no tracking across other apps. It does collect limited, anonymous usage and crash data, linked to a random ID, so we can fix problems and improve the app.</p>
+
+<div class="note">
+<p><strong>In short.</strong> Your habits, notes, name and photo are stored only on your device. We never receive them. We receive anonymous usage events and crash reports through Google Firebase, tied to a random ID that contains no name or email.</p>
+</div>
 
 <h2>Who we are</h2>
-<p>Habon is an iPhone, iPad and Apple Watch app made by Sajid A Khokhar ("we", "us").</p>
+<p>Habon (shown on your Home Screen as "Habon Habit") is an iPhone, iPad and Apple Watch app made by Sajid A Khokhar ("we", "us").</p>
 
 <h2>What stays on your device</h2>
-<p>Everything you enter is stored on your device: habit names, goals, schedules, daily progress, notes, routines, reminders, achievements, your name and profile picture, and your settings. We never receive it, and we can't see it or recover it for you. If you delete the app or erase your data in Settings, it is gone.</p>
-
-<h2>Permissions the app can ask for</h2>
+<p>The following is stored only on your device and is never sent to us:</p>
 <ul>
-<li><strong>Notifications.</strong> Used only for the reminders you set and the optional evening check-in and weekly recap. They are scheduled on your device. You can turn them off in Settings or in iOS.</li>
-<li><strong>Apple Health (optional).</strong> If you connect it, the app reads your steps, exercise minutes, active energy, walking, running, cycling and swimming distance, and recent workouts to show them on the Activity screen. This is read-only: the app never writes to Health. The data is shown on your device and your paired Apple Watch, and is not sent to us or anyone else. You can change access at any time in Settings &rsaquo; Health.</li>
-<li><strong>Photos (optional).</strong> If you choose a profile picture, the app receives only the photo you pick, and saves a copy on your device.</li>
+<li>Your habits, goals, schedules, daily entries, notes, routines, reminders and achievements.</li>
+<li>Your profile name, your optional profile photo or the illustrated character you pick, and your settings (theme, appearance, week start, haptics and sounds).</li>
+</ul>
+<p>We run no server for this data and keep no copy, so we can't see it or recover it for you. Deleting the app removes it. In Settings, <strong>Erase All Data</strong> deletes your habits, entries, routines, reminders, achievements, name and photo, and returns the app to the start.</p>
+
+<h2>No account, no ads, no tracking</h2>
+<ul>
+<li>No sign-up, and we don't ask for your email or name.</li>
+<li>No advertising, and we don't sell your data or share it for advertising.</li>
+<li>No tracking across other companies' apps or websites.</li>
+<li>The app doesn't use the advertising identifier (IDFA).</li>
 </ul>
 
-<h2>Apple Watch</h2>
-<p>The Watch app shows today's habits and lets you check them off. Your iPhone and Watch exchange this information directly with each other, using Apple's connection between paired devices. It doesn't pass through our servers.</p>
+<h2>Anonymous ID</h2>
+<p>When you first open the app, it signs in anonymously with Firebase Authentication (Google). This creates a random ID that has no name or email. Firebase keeps it in your iPhone's Keychain, so it can survive deleting and reinstalling the app. We use it to link analytics and crash reports to a random identifier, not to a person.</p>
+
+<h2>Analytics</h2>
+<p>We use Firebase Analytics (Google) to learn which features are used and to find problems. It records events such as:</p>
+<ul>
+<li>screens you open;</li>
+<li>habits created or completed (counts and types only);</li>
+<li>reminders turned on and settings changed;</li>
+<li>achievements unlocked;</li>
+<li>Premium steps: the Premium screen opened, a plan chosen, and a purchase completed, cancelled, failed or restored, with the App Store product ID and transaction ID.</li>
+</ul>
+<p>Firebase also collects some data automatically: device model, iOS version, app version, language, approximate region (from your IP address), session timing, and a Firebase installation identifier. Google also receives standard connection details, such as your IP address, whenever the app connects to Firebase services.</p>
+<p>Events never include your habit names, notes, profile name or photo, Health data, or any text you type. Events are linked to the anonymous ID above.</p>
+<p>The app doesn't currently have a setting to turn analytics off. To stop it, delete the app.</p>
+
+<h2>Crash reports</h2>
+<p>We use Firebase Crashlytics (Google). If the app crashes, it sends a crash log with your device model, iOS version, app version and technical stack traces, linked to the anonymous ID. It contains no habit content and no personal details. The Apple Watch app sends its own crash reports in the same way, but no analytics.</p>
+
+<h2>Apple Health (optional)</h2>
+<p>If you allow it, the app reads your steps, exercise minutes, active energy, walking, running, cycling and swimming distance, and workouts from the last 7 days, and shows them next to your habits. It only reads: the app never writes to Health. This data stays on your device and your paired Apple Watch. It is not sent to us, to Firebase or to anyone else. You can change access at any time in Settings &rsaquo; Health.</p>
+
+<h2>Notifications</h2>
+<p>Habit reminders, the optional evening check-in, the weekly recap and the welcome-back message are scheduled on your device. Nothing is sent from a server. The app asks for permission only when you add your first reminder. You can change it at any time in iOS Settings.</p>
+
+<h2>Apple Watch and widgets</h2>
+<p>The Watch app receives today's habits and stats directly from your paired iPhone, and sends back your taps (done, +1, timer, skip). The watch-face complication shares the latest snapshot with the Watch app through an App Group on the Watch. None of this passes through our servers.</p>
 
 <h2>Purchases</h2>
-<p>Premium is bought through the App Store. Apple handles your payment and tells the app whether you own Premium. We never see your payment details or Apple Account. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
+<p>Purchases are handled entirely by Apple (the App Store). We never see your card or payment details or your Apple Account. We learn only whether you have Premium, and the product and transaction identifiers described under Analytics. Restore Purchases and Manage Subscription use Apple's own screens. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
-<h2>What we don't do</h2>
+<h2>Other features</h2>
 <ul>
-<li>No sign-up or account.</li>
-<li>No ads and no advertising or tracking SDKs.</li>
-<li>No analytics or crash reporting that identifies you.</li>
-<li>We don't sell or share personal information, because we don't have any.</li>
+<li><strong>Sounds and calm scenes</strong> play on your device. Audio can keep playing while the screen is locked.</li>
+<li><strong>Profile photo.</strong> If you choose one, you pick it with the system photo picker, so the app receives only the photo you select. A copy is saved on your device.</li>
+<li><strong>Links.</strong> Privacy Policy and Terms of Use open these web pages in a sheet inside the app. Rate Habon opens the App Store.</li>
+<li><strong>iCloud</strong> is not used.</li>
 </ul>
 
-<h2>Backups</h2>
-<p>Your device's own backup (iCloud or a computer) may include the app's data, under Apple's terms. We don't control or access those backups.</p>
+<h2>Services we use</h2>
+<ul>
+<li><strong>Apple:</strong> the App Store, Apple Health, notifications and Apple Watch connectivity.</li>
+<li><strong>Google Firebase:</strong> Authentication, Analytics and Crashlytics. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</li>
+</ul>
+
+<h2>How long we keep data</h2>
+<p>Data on your device stays until you erase it or delete the app. Analytics and crash data are tied to a random ID and are kept by Google for the period set in our Firebase settings.</p>
+<!-- CONFIRM: retention period configured in the Firebase console (Analytics event data retention) -->
+
+<h2>Deleting your data</h2>
+<p>You can delete everything stored on your device at any time with Erase All Data, or by deleting the app. The anonymous ID is not shown in the app, so we can't tell which analytics or crash data belongs to a particular person, and we can't match a request to you. If you write to us, we will tell you what we can and can't do. The data is not linked to your name or email.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (for example under the GDPR in Europe or the CCPA in California), you may have the right to ask for access to your data, to have it corrected or deleted, and to object to or limit how it is used. Write to us at the address below and we will help as far as we can. You also have the right to complain to your local data protection authority.</p>
+
+<h2>International transfers</h2>
+<p>Firebase may process data on Google servers outside your country, including in the United States.</p>
 
 <h2>Children</h2>
-<p>The app doesn't collect any personal information from anyone, including children.</p>
-
-<h2>Your choices</h2>
-<p>You can delete everything at any time with Erase All Data in Settings, or by deleting the app. Because we hold no copy, there is nothing for us to export or delete on our side.</p>
+<p>Habon is not directed at children under 13, and we don't knowingly collect their personal information.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, we will post the new version here with a new date.</p>
+<p>If this policy changes, we will post the new version on this page with a new "Last updated" date.</p>
 
 <h2>Contact</h2>
-<p>Questions? Write to <a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a>.</p>
+<p>Questions or requests? Write to <a href="mailto:support.sajidapps@gmail.com">support.sajidapps@gmail.com</a>.</p>
 
 <footer><a href="terms-and-use.html">Terms of Use</a><span>&copy; 2026 Sajid A Khokhar</span></footer>
 </main>
